@@ -19,6 +19,7 @@ public class SoundSpawner : MonoBehaviour {
     public AudioClip footsteps;
     public AudioClip walkingSound;
     public AudioClip runningSound;
+    public AudioClip[] ListOfSounds;
 
     void Start()
     {
@@ -38,23 +39,33 @@ public class SoundSpawner : MonoBehaviour {
         if (playerScript.speed == playerScript.RunSpeed)
         {
             SoundObject = SoundLarge;
-            footsteps = runningSound;
+//            footsteps = runningSound;
             SoundTimer = SoundTimerRunning;
         }
         if (playerScript.speed == playerScript.SneakSpeed)
         {
             SoundObject = SoundSmall;
-            footsteps = null;
+ //           footsteps = null;
             SoundTimer = SoundTimerSneaking;
         }
         if (playerScript.speed == playerScript.WalkSpeed)
         {
             SoundObject = SoundMedium;
-            footsteps = walkingSound;
+//            footsteps = walkingSound;
             SoundTimer = FullSoundTimer;
         }
         Instantiate (SoundObject, player.transform.position, Quaternion.identity);
+        RunningSteps();
+ //       playerAudioSource.Stop();
+//        playerAudioSource.PlayOneShot(footsteps, 1.0f);
+    }
+    public void RunningSteps()
+    {
         playerAudioSource.Stop();
+        int rndNo = Random.Range(0, ListOfSounds.Length);
+        footsteps = ListOfSounds[rndNo];
         playerAudioSource.PlayOneShot(footsteps, 1.0f);
+
+
     }
 }

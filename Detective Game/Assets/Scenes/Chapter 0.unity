@@ -11195,6 +11195,26 @@ PrefabInstance:
       propertyPath: RunSpeed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2263691688335503046, guid: f061163687acb0f43a7dc2664eab3330,
+        type: 3}
+      propertyPath: ListOfSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2263691688335503046, guid: f061163687acb0f43a7dc2664eab3330,
+        type: 3}
+      propertyPath: ListOfSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 4fd6755dc18da3a4da99c4b1e270d1bb, type: 3}
+    - target: {fileID: 2263691688335503046, guid: f061163687acb0f43a7dc2664eab3330,
+        type: 3}
+      propertyPath: ListOfSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: ba527f9341ef2774b9b1afefc3e94416, type: 3}
+    - target: {fileID: 2263691688335503046, guid: f061163687acb0f43a7dc2664eab3330,
+        type: 3}
+      propertyPath: ListOfSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: b262a81803f68504fbc43a215c835ce5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f061163687acb0f43a7dc2664eab3330, type: 3}
 --- !u!1001 &2460321476787782190
