@@ -5,7 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class Admin : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public bool Sprint;
+    public bool Sneak;
+    public bool Interact;
+    public bool Throw;
+
     void Start()
     {
         
