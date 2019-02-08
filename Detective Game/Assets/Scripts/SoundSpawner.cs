@@ -9,7 +9,7 @@ public class SoundSpawner : MonoBehaviour {
     public GameObject SoundSmall;
     public GameObject SoundLarge;
     public Transform player;
-    public PlayerController playerScript;
+    public AlternativePlayerControls alternativePlayerScript;
     public float SoundTimer;
     public float FullSoundTimer;
     public float SoundTimerRunning;
@@ -28,7 +28,7 @@ public class SoundSpawner : MonoBehaviour {
 
     void Update () {
 		SoundTimer -= Time.deltaTime;
-		if (!playerScript.playerStill){
+		if (!alternativePlayerScript.playerStill){
 			if (SoundTimer <= 0) {
 				Invoke ("MakeSound", 0.0f);
 			}
@@ -36,19 +36,13 @@ public class SoundSpawner : MonoBehaviour {
   
 	}
 	void MakeSound (){
-        if (playerScript.speed == playerScript.RunSpeed)
+        if (alternativePlayerScript.speed == alternativePlayerScript.RunSpeed)
         {
             SoundObject = SoundLarge;
 //            footsteps = runningSound;
             SoundTimer = SoundTimerRunning;
         }
-        if (playerScript.speed == playerScript.SneakSpeed)
-        {
-            SoundObject = SoundSmall;
- //           footsteps = null;
-            SoundTimer = SoundTimerSneaking;
-        }
-        if (playerScript.speed == playerScript.WalkSpeed)
+        if (alternativePlayerScript.speed == alternativePlayerScript.WalkSpeed)
         {
             SoundObject = SoundMedium;
 //            footsteps = walkingSound;

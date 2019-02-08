@@ -8,6 +8,7 @@ public class ProjectileLauncher : MonoBehaviour
     public Transform shotPoint;
     public bool hasThrowable = false;
     public GameObject projectileIcon;
+    public AlternativePlayerControls alternativePlayerScript;
 
     void Update()
     {
@@ -20,7 +21,7 @@ public class ProjectileLauncher : MonoBehaviour
         {
             projectileIcon.SetActive(false);
         }
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1) && alternativePlayerScript.playerStill)
         {
             if (hasThrowable)
             {

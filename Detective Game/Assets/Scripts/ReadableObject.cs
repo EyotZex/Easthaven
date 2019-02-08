@@ -27,7 +27,7 @@ public class ReadableObject : MonoBehaviour
 
         if (interactRange)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if(Input.GetMouseButtonDown(1))
             {
                 if (!signActive)
                 {
