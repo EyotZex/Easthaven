@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DoorControl : MonoBehaviour {
 
@@ -26,6 +27,12 @@ public class DoorControl : MonoBehaviour {
     public GameObject doorCollider;
     public float ColliderDisableTimer;
     public float ColliderDisableTimerStart;
+
+    public Text textBox;
+    public GameObject textBoxObject;
+    public bool signActive;
+    [TextArea]
+    public string textInfo;
 
     void Start () {
 		doorAnimator = GetComponent<Animator> ();
@@ -74,7 +81,7 @@ public class DoorControl : MonoBehaviour {
 					doorAnimator.Play ("doorLocked", 0, 0.0f);
 					doorAudiosource.PlayOneShot (doorLocked, 1.0f);
 					Instantiate (SoundObject, transform.position, Quaternion.identity);
-				}
+                }
 			}
 		}
         if (interactRangeLeft)
@@ -113,8 +120,24 @@ public class DoorControl : MonoBehaviour {
                     doorAnimator.Play("doorLocked", 0, 0.0f);
                     doorAudiosource.PlayOneShot(doorLocked, 1.0f);
                     Instantiate(SoundObject, transform.position, Quaternion.identity);
+                  
                 }
             }
+        }
+        if (interactRangeLeft || interactRangeRight)
+        {
+            if (!hasKey)
+            {
+                if (Input.GetMouseButtonDown(1))
+                {
+                    textBoxObject.SetActive(true);
+                    textBox.text = textInfo;
+                }
+            }
+        }
+        else
+        {
+            textBoxObject.SetActive(false);
         }
     }
 	public void OnTriggerEnter2D (Collider2D other){

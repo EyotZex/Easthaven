@@ -462,6 +462,7 @@ GameObject:
   - component: {fileID: 2263691688335503046}
   - component: {fileID: 2263691688335503047}
   - component: {fileID: 3766145355019269771}
+  - component: {fileID: 1914945147}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -676,6 +677,7 @@ MonoBehaviour:
   hasThrowable: 0
   projectileIcon: {fileID: 1081481371}
   alternativePlayerScript: {fileID: 3766145355019269771}
+  doubleclickDetectScript: {fileID: 1914945147}
 --- !u!114 &3766145355019269771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -693,6 +695,27 @@ MonoBehaviour:
   RunSpeed: 5
   playerStill: 0
   rb: {fileID: 2263691688335503042}
+  doubleclickDetectScript: {fileID: 1914945147}
+--- !u!114 &1914945147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2263691688335503041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4900f19ba13b5aa41957bf3abcb4ce66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clicks: 2
+  DoubleClicked: 0
+  timer: 0
+  timerStart: 0.5
+  Clicks2: 0
+  DoubleClicked2: 0
+  timer2: 0
+  timerStart2: 0.5
 --- !u!1 &2263691688349161042
 GameObject:
   m_ObjectHideFlags: 0

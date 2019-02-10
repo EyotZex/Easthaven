@@ -9,6 +9,7 @@ public class ProjectileLauncher : MonoBehaviour
     public bool hasThrowable = false;
     public GameObject projectileIcon;
     public AlternativePlayerControls alternativePlayerScript;
+    public DoubleClickDetect doubleclickDetectScript;
 
     void Update()
     {
@@ -21,7 +22,7 @@ public class ProjectileLauncher : MonoBehaviour
         {
             projectileIcon.SetActive(false);
         }
-        if (Input.GetMouseButtonDown(1) && alternativePlayerScript.playerStill)
+        if (doubleclickDetectScript.DoubleClicked2)
         {
             if (hasThrowable)
             {

@@ -11,6 +11,7 @@ public class AlternativePlayerControls : MonoBehaviour
     public bool playerStill;
 
     public Rigidbody2D rb;
+    public DoubleClickDetect doubleclickDetectScript;
 
     void Start()
     {
@@ -27,17 +28,16 @@ public class AlternativePlayerControls : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (Input.GetMouseButton(1))
-        {
-            speed = RunSpeed;
-        }
-        else
-        {
-            speed = WalkSpeed;
-        }
-
         if (Input.GetMouseButton(0))
         {
+            if (doubleclickDetectScript.DoubleClicked)
+            {
+                speed = RunSpeed;
+            }
+            else
+            {
+                speed = WalkSpeed;
+            }
             rb.velocity = transform.right * speed;
             playerStill = false;
         }
@@ -45,7 +45,6 @@ public class AlternativePlayerControls : MonoBehaviour
         {
             rb.velocity = transform.right * 0;
             playerStill = true;
-            speed = WalkSpeed;
         }
     }
 }
