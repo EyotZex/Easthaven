@@ -28,15 +28,15 @@ public class DoorControl : MonoBehaviour {
     public float ColliderDisableTimer;
     public float ColliderDisableTimerStart;
 
-    public Text textBox;
-    public GameObject textBoxObject;
     public bool signActive;
     public bool CanBeInteracted;
+    public TextManager _textManager;
     [TextArea]
     public string textInfo;
 
     void Start () {
-		doorAnimator = GetComponent<Animator> ();
+        _textManager = GameObject.FindGameObjectWithTag("Admin").GetComponentInChildren<TextManager>();
+        doorAnimator = GetComponent<Animator> ();
 		doorAudiosource = GetComponent<AudioSource> ();
 		if (isOpen) {
 			doorAnimator.Play ("doorClosing", 0, 0.0f);
@@ -141,13 +141,13 @@ public class DoorControl : MonoBehaviour {
         {
             if (!signActive)
             {
-                textBoxObject.SetActive(true);
-                textBox.text = textInfo;
+                _textManager.Canvas.SetActive(true);
+                _textManager.canvasText.text = textInfo;
                 signActive = true;
             }
             else
             {
-                textBoxObject.SetActive(false);
+                _textManager.Canvas.SetActive(false);
                 signActive = false;
             }
         }
@@ -169,7 +169,7 @@ public class DoorControl : MonoBehaviour {
     {
         if (other.gameObject.tag == "Player")
         {
-            textBoxObject.SetActive(false);
+            _textManager.Canvas.SetActive(false);
             CanBeInteracted = false;
             signActive = false;
         }

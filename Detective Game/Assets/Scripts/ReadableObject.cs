@@ -1,30 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ReadableObject : MonoBehaviour{
 
     public bool signActive;
-    public Text textBox;
-    public GameObject textBoxObject;
     public bool CanBeInteracted;
     [TextArea]
     public string textInfo;
+    public TextManager _textManager;
 
+    void Start()
+    {
+        _textManager = GameObject.FindGameObjectWithTag("Admin").GetComponentInChildren<TextManager>();
+    }
 
     void Update(){
         if (Input.GetMouseButtonDown(1) && CanBeInteracted)
         {
             if (!signActive)
             {
-                textBoxObject.SetActive(true);
-                textBox.text = textInfo;
+                _textManager.Canvas.SetActive(true);
+                _textManager.canvasText.text = textInfo;
                 signActive = true;
             }
             else
             {
-                textBoxObject.SetActive(false);
+                _textManager.Canvas.SetActive(false);
                 signActive = false;
             }
         }
@@ -40,7 +42,7 @@ public class ReadableObject : MonoBehaviour{
     {
         if (other.gameObject.tag == "Player")
         {
-            textBoxObject.SetActive(false);
+            _textManager.Canvas.SetActive(false);
             CanBeInteracted = false;
             signActive = false;
         }

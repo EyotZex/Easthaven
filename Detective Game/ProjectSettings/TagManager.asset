@@ -8,6 +8,7 @@ TagManager:
   - Monster
   - Wall
   - Projectile
+  - Admin
   layers:
   - Default
   - TransparentFX
