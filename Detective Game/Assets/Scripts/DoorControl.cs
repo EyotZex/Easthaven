@@ -31,6 +31,7 @@ public class DoorControl : MonoBehaviour {
     public Text textBox;
     public GameObject textBoxObject;
     public bool signActive;
+    public bool CanBeInteracted;
     [TextArea]
     public string textInfo;
 
@@ -42,48 +43,58 @@ public class DoorControl : MonoBehaviour {
 			isOpen = false;
 		}
 	}
-	void Update () {
+    void Update()
+    {
         ColliderDisableTimer -= Time.deltaTime;
         if (ColliderDisableTimer <= 0)
         {
             doorCollider.GetComponent<Collider2D>().enabled = true;
         }
 
-        interactRangeLeft = Physics2D.OverlapCircle (LeftOrigin.position, maskSize, playerLayer);
+        interactRangeLeft = Physics2D.OverlapCircle(LeftOrigin.position, maskSize, playerLayer);
         interactRangeRight = Physics2D.OverlapCircle(RightOrigin.position, maskSize, playerLayer);
 
-        if (interactRangeRight) {
+        if (interactRangeRight)
+        {
             if (Input.GetMouseButtonDown(1))
             {
-                if (hasKey) {
-					if (isOpen) {
-                        if (doorOpenRight){
+                if (hasKey)
+                {
+                    if (isOpen)
+                    {
+                        if (doorOpenRight)
+                        {
                             doorAnimator.Play("doorClosing", 0, 0.0f);
                         }
-                        else{
+                        else
+                        {
                             doorAnimator.Play("LeftdoorClosing", 0, 0.0f);
                         }
-						doorAudiosource.PlayOneShot (doorClosing, 1.0f);
-						Instantiate (SoundObject, transform.position, Quaternion.identity);
-						isOpen = false;
+                        doorAudiosource.PlayOneShot(doorClosing, 1.0f);
+                        Instantiate(SoundObject, transform.position, Quaternion.identity);
+                        isOpen = false;
                         doorOpenRight = false;
                         doorOpenLeft = false;
                         DisableCollider();
-                    } else {
-						doorAnimator.Play ("doorOpening", 0, 0.0f);
-						doorAudiosource.PlayOneShot (doorOpening, 1.0f);
-						Instantiate (SoundObject, transform.position, Quaternion.identity);
-						isOpen = true;
+                    }
+                    else
+                    {
+                        doorAnimator.Play("doorOpening", 0, 0.0f);
+                        doorAudiosource.PlayOneShot(doorOpening, 1.0f);
+                        Instantiate(SoundObject, transform.position, Quaternion.identity);
+                        isOpen = true;
                         doorOpenRight = true;
                         DisableCollider();
                     }
-				} else {
-					doorAnimator.Play ("doorLocked", 0, 0.0f);
-					doorAudiosource.PlayOneShot (doorLocked, 1.0f);
-					Instantiate (SoundObject, transform.position, Quaternion.identity);
                 }
-			}
-		}
+                else
+                {
+                    doorAnimator.Play("doorLocked", 0, 0.0f);
+                    doorAudiosource.PlayOneShot(doorLocked, 1.0f);
+                    Instantiate(SoundObject, transform.position, Quaternion.identity);
+                }
+            }
+        }
         if (interactRangeLeft)
         {
             if (Input.GetMouseButtonDown(1))
@@ -92,10 +103,12 @@ public class DoorControl : MonoBehaviour {
                 {
                     if (isOpen)
                     {
-                        if (doorOpenLeft){
+                        if (doorOpenLeft)
+                        {
                             doorAnimator.Play("LeftdoorClosing", 0, 0.0f);
                         }
-                        else{
+                        else
+                        {
                             doorAnimator.Play("doorClosing", 0, 0.0f);
                         }
                         doorAudiosource.PlayOneShot(doorClosing, 1.0f);
@@ -120,28 +133,31 @@ public class DoorControl : MonoBehaviour {
                     doorAnimator.Play("doorLocked", 0, 0.0f);
                     doorAudiosource.PlayOneShot(doorLocked, 1.0f);
                     Instantiate(SoundObject, transform.position, Quaternion.identity);
-                  
+
                 }
             }
         }
-        if (interactRangeLeft || interactRangeRight)
+        if (Input.GetMouseButtonDown(1) && CanBeInteracted)
         {
-            if (!hasKey)
+            if (!signActive)
             {
-                if (Input.GetMouseButtonDown(1))
-                {
-                    textBoxObject.SetActive(true);
-                    textBox.text = textInfo;
-                }
+                textBoxObject.SetActive(true);
+                textBox.text = textInfo;
+                signActive = true;
             }
-        }
-        else
-        {
-            textBoxObject.SetActive(false);
+            else
+            {
+                textBoxObject.SetActive(false);
+                signActive = false;
+            }
         }
     }
 	public void OnTriggerEnter2D (Collider2D other){
-		if (other.gameObject.tag == "Monster") {
+        if (other.gameObject.tag == "Player")
+        {
+            CanBeInteracted = true;
+        }
+        if (other.gameObject.tag == "Monster") {
 			if (!isOpen) {
 				doorAnimator.Play ("doorLocked", 0, 0.0f);
 				doorAudiosource.PlayOneShot (doorLocked, 1.0f);
@@ -149,6 +165,15 @@ public class DoorControl : MonoBehaviour {
             }
 		}
 	}
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            textBoxObject.SetActive(false);
+            CanBeInteracted = false;
+            signActive = false;
+        }
+    }
     public void DisableCollider()
     {
         doorCollider.GetComponent<Collider2D>().enabled = false;

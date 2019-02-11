@@ -553,22 +553,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'WASD - Walking
+  m_Text: 'Hold Left Mouse Button - Walking
 
 
-    SHIFT - Sprinting
+    Double Click Left Mouse Button - Sprinting
 
 
-    CTRL - Sneaking
+    Click Right Mouse Button - Interact with enviroment
 
 
-    E - Interact with enviroment
-
-
-    MOUSE - Aim Light or Projectile
-
-
-    LEFT CLICK - Fire Projectile
+    Double Click Right Mouse Button - Fire Projectile
 
 
     ESC - Return to Menu'
