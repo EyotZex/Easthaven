@@ -25,8 +25,8 @@ public class DoorControl : MonoBehaviour {
 	public AudioClip doorLocked;
 
     public GameObject doorCollider;
-    private float ColliderDisableTimer;
-    private float ColliderDisableTimerStart;
+    public float ColliderDisableTimer;
+    public float ColliderDisableTimerStart;
 
     private bool signActive;
     private bool CanBeInteracted;

@@ -182,12 +182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d68b1e4ccf2ce804db4ab607187ab12b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasKey: 0
+  hasKey: 1
   isOpen: 1
-  doorOpenLeft: 0
-  doorOpenRight: 0
-  interactRangeLeft: 0
-  interactRangeRight: 0
   LeftOrigin: {fileID: 468086928}
   RightOrigin: {fileID: 2013655542}
   playerLayer:
@@ -204,10 +200,10 @@ MonoBehaviour:
   doorCollider: {fileID: 1888617115100922}
   ColliderDisableTimer: 0
   ColliderDisableTimerStart: 0.5
-  signActive: 0
-  CanBeInteracted: 0
   _textManager: {fileID: 0}
-  textInfo: They must have closed down for the night... But i gotta get inside
+  textInfo: '
+
+'
 --- !u!95 &95149878244453552
 Animator:
   serializedVersion: 3
@@ -364,7 +360,7 @@ Transform:
   m_GameObject: {fileID: 1686852162242420}
   m_LocalRotation: {x: 0, y: -0, z: 0, w: -1}
   m_LocalPosition: {x: -8, y: 7.5, z: 1}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1.42426}
+  m_LocalScale: {x: 0.5000005, y: 0.5000005, z: 1.42426}
   m_Children:
   - {fileID: 4399505501108076}
   - {fileID: 468086928}
