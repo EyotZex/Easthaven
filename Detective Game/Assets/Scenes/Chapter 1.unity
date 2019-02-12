@@ -4943,32 +4943,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 360
       objectReference: {fileID: 0}
-    - target: {fileID: 114083553150446038, guid: 24e30cfc8eaa68a409d960499a0f0585,
-        type: 3}
-      propertyPath: hasKey
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083553150446038, guid: 24e30cfc8eaa68a409d960499a0f0585,
-        type: 3}
-      propertyPath: textInfo
-      value: '
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 114083553150446038, guid: 24e30cfc8eaa68a409d960499a0f0585,
-        type: 3}
-      propertyPath: doorOpenLeft
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1605575484, guid: 24e30cfc8eaa68a409d960499a0f0585, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 58667585287024316, guid: 24e30cfc8eaa68a409d960499a0f0585,
-        type: 3}
-      propertyPath: m_Radius
-      value: 2.03
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24e30cfc8eaa68a409d960499a0f0585, type: 3}
 --- !u!4 &775223663 stripped
@@ -10440,13 +10414,18 @@ PrefabInstance:
       propertyPath: monsterSoundTimerStart
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114206151960917362, guid: 25bd882c1e17ef847a05aa16026873b3,
+        type: 3}
+      propertyPath: chaseSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4314181342006950, guid: 25bd882c1e17ef847a05aa16026873b3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.99
+      value: -2.3
       objectReference: {fileID: 0}
     - target: {fileID: 4314181342006950, guid: 25bd882c1e17ef847a05aa16026873b3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.33
+      value: 0.56
       objectReference: {fileID: 0}
     - target: {fileID: 4894066380305578, guid: 25bd882c1e17ef847a05aa16026873b3, type: 3}
       propertyPath: m_LocalPosition.x
