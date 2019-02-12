@@ -7,11 +7,11 @@ public class DoorControl : MonoBehaviour {
 
 	public bool hasKey = false;
 	public bool isOpen = false;
-    public bool doorOpenLeft = false;
-    public bool doorOpenRight = false;
+    private bool doorOpenLeft = false;
+    private bool doorOpenRight = false;
 
-	public bool interactRangeLeft = false;
-    public bool interactRangeRight = false;
+    private bool interactRangeLeft = false;
+    private bool interactRangeRight = false;
     public Transform LeftOrigin;
     public Transform RightOrigin;
     public LayerMask playerLayer;
@@ -25,11 +25,11 @@ public class DoorControl : MonoBehaviour {
 	public AudioClip doorLocked;
 
     public GameObject doorCollider;
-    public float ColliderDisableTimer;
-    public float ColliderDisableTimerStart;
+    private float ColliderDisableTimer;
+    private float ColliderDisableTimerStart;
 
-    public bool signActive;
-    public bool CanBeInteracted;
+    private bool signActive;
+    private bool CanBeInteracted;
     public TextManager _textManager;
     [TextArea]
     public string textInfo;
