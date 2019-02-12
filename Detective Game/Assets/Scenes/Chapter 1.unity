@@ -320,6 +320,98 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6041159}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &34476212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 34476213}
+  - component: {fileID: 34476216}
+  - component: {fileID: 34476215}
+  - component: {fileID: 34476214}
+  m_Layer: 0
+  m_Name: blood (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &34476213
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34476212}
+  m_LocalRotation: {x: -0, y: -0, z: -0.68543714, w: 0.72813183}
+  m_LocalPosition: {x: -2.46, y: 11.08, z: 1.011}
+  m_LocalScale: {x: 4, y: 4, z: 4.50762}
+  m_Children: []
+  m_Father: {fileID: 97018668}
+  m_RootOrder: 46
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -86.54}
+--- !u!64 &34476214
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34476212}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &34476215
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34476212}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 449e4ba05b986504ca9a9d1689782791, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &34476216
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34476212}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &40922643
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +425,7 @@ GameObject:
   - component: {fileID: 40922646}
   - component: {fileID: 40922645}
   m_Layer: 0
-  m_Name: Quad (24)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -917,6 +1009,9 @@ Transform:
   - {fileID: 1209187253}
   - {fileID: 1571836941}
   - {fileID: 1629453701}
+  - {fileID: 543894055}
+  - {fileID: 34476213}
+  - {fileID: 560629314}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1043,7 +1138,7 @@ GameObject:
   - component: {fileID: 157558709}
   - component: {fileID: 157558708}
   m_Layer: 0
-  m_Name: Quad (30)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1447,7 +1542,7 @@ GameObject:
   - component: {fileID: 206822117}
   - component: {fileID: 206822116}
   m_Layer: 0
-  m_Name: Quad (26)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1851,7 +1946,7 @@ GameObject:
   - component: {fileID: 248514487}
   - component: {fileID: 248514486}
   m_Layer: 0
-  m_Name: Quad (16)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2151,7 +2246,7 @@ GameObject:
   - component: {fileID: 290368902}
   - component: {fileID: 290368901}
   m_Layer: 0
-  m_Name: Quad (23)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2479,7 +2574,7 @@ GameObject:
   - component: {fileID: 386005956}
   - component: {fileID: 386005955}
   m_Layer: 0
-  m_Name: Quad (32)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2766,7 +2861,7 @@ GameObject:
   - component: {fileID: 408066945}
   - component: {fileID: 408066944}
   m_Layer: 0
-  m_Name: Quad (51)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3053,6 +3148,190 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 430066760}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &543894054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 543894055}
+  - component: {fileID: 543894058}
+  - component: {fileID: 543894057}
+  - component: {fileID: 543894056}
+  m_Layer: 0
+  m_Name: blood
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &543894055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543894054}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.52, y: 18.41, z: 1.011}
+  m_LocalScale: {x: 4, y: 4, z: 4.50762}
+  m_Children: []
+  m_Father: {fileID: 97018668}
+  m_RootOrder: 45
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &543894056
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543894054}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &543894057
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543894054}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 449e4ba05b986504ca9a9d1689782791, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &543894058
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543894054}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &560629313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 560629314}
+  - component: {fileID: 560629317}
+  - component: {fileID: 560629316}
+  - component: {fileID: 560629315}
+  m_Layer: 0
+  m_Name: blood (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &560629314
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560629313}
+  m_LocalRotation: {x: -0, y: -0, z: 0.94516176, w: 0.3266027}
+  m_LocalPosition: {x: -1.31, y: 18.62, z: 1.011}
+  m_LocalScale: {x: 4, y: 4, z: 4.50762}
+  m_Children: []
+  m_Father: {fileID: 97018668}
+  m_RootOrder: 47
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 141.875}
+--- !u!64 &560629315
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560629313}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &560629316
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560629313}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 449e4ba05b986504ca9a9d1689782791, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &560629317
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 560629313}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &572027467
 GameObject:
   m_ObjectHideFlags: 0
@@ -3170,7 +3449,7 @@ GameObject:
   - component: {fileID: 573165594}
   - component: {fileID: 573165593}
   m_Layer: 0
-  m_Name: Quad (54)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3401,7 +3680,7 @@ GameObject:
   - component: {fileID: 606597666}
   - component: {fileID: 606597665}
   m_Layer: 0
-  m_Name: Quad (42)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3493,7 +3772,7 @@ GameObject:
   - component: {fileID: 619150952}
   - component: {fileID: 619150951}
   m_Layer: 0
-  m_Name: Quad (39)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3714,7 +3993,7 @@ GameObject:
   - component: {fileID: 662839931}
   - component: {fileID: 662839930}
   m_Layer: 0
-  m_Name: Quad (45)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4030,7 +4309,7 @@ GameObject:
   - component: {fileID: 684915769}
   - component: {fileID: 684915768}
   m_Layer: 0
-  m_Name: Quad (31)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4122,7 +4401,7 @@ GameObject:
   - component: {fileID: 701507697}
   - component: {fileID: 701507696}
   m_Layer: 0
-  m_Name: Quad (41)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4436,7 +4715,7 @@ GameObject:
   - component: {fileID: 732578776}
   - component: {fileID: 732578775}
   m_Layer: 0
-  m_Name: Quad (27)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4528,7 +4807,7 @@ GameObject:
   - component: {fileID: 735647305}
   - component: {fileID: 735647304}
   m_Layer: 0
-  m_Name: Quad (34)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4724,7 +5003,7 @@ GameObject:
   - component: {fileID: 739136734}
   - component: {fileID: 739136733}
   m_Layer: 0
-  m_Name: Quad (37)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5106,7 +5385,7 @@ GameObject:
   - component: {fileID: 832123636}
   - component: {fileID: 832123635}
   m_Layer: 0
-  m_Name: Quad (22)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5198,7 +5477,7 @@ GameObject:
   - component: {fileID: 836718222}
   - component: {fileID: 836718221}
   m_Layer: 0
-  m_Name: Quad (19)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5669,7 +5948,7 @@ GameObject:
   - component: {fileID: 946751588}
   - component: {fileID: 946751587}
   m_Layer: 0
-  m_Name: Quad (17)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6043,7 +6322,7 @@ GameObject:
   - component: {fileID: 1006687467}
   - component: {fileID: 1006687466}
   m_Layer: 0
-  m_Name: Quad (36)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6607,7 +6886,7 @@ GameObject:
   - component: {fileID: 1080109972}
   - component: {fileID: 1080109971}
   m_Layer: 0
-  m_Name: Quad (15)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7050,7 +7329,7 @@ GameObject:
   - component: {fileID: 1145436960}
   - component: {fileID: 1145436959}
   m_Layer: 0
-  m_Name: Quad (33)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7624,7 +7903,7 @@ GameObject:
   - component: {fileID: 1209187255}
   - component: {fileID: 1209187254}
   m_Layer: 0
-  m_Name: Quad (55)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7999,7 +8278,7 @@ GameObject:
   - component: {fileID: 1296885371}
   - component: {fileID: 1296885370}
   m_Layer: 0
-  m_Name: Quad (47)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8091,7 +8370,7 @@ GameObject:
   - component: {fileID: 1300756033}
   - component: {fileID: 1300756032}
   m_Layer: 0
-  m_Name: Quad (46)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8490,7 +8769,7 @@ GameObject:
   - component: {fileID: 1356711650}
   - component: {fileID: 1356711649}
   m_Layer: 0
-  m_Name: Quad (40)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8792,7 +9071,7 @@ GameObject:
   - component: {fileID: 1392937352}
   - component: {fileID: 1392937351}
   m_Layer: 0
-  m_Name: Quad (52)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9196,7 +9475,7 @@ GameObject:
   - component: {fileID: 1451112479}
   - component: {fileID: 1451112478}
   m_Layer: 0
-  m_Name: Quad (29)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9491,7 +9770,7 @@ GameObject:
   - component: {fileID: 1511425513}
   - component: {fileID: 1511425512}
   m_Layer: 0
-  m_Name: Quad (38)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9583,7 +9862,7 @@ GameObject:
   - component: {fileID: 1516310695}
   - component: {fileID: 1516310694}
   m_Layer: 0
-  m_Name: Quad (50)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9952,7 +10231,7 @@ GameObject:
   - component: {fileID: 1571836943}
   - component: {fileID: 1571836942}
   m_Layer: 0
-  m_Name: Quad (56)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10050,7 +10329,7 @@ GameObject:
   - component: {fileID: 1620876410}
   - component: {fileID: 1620876409}
   m_Layer: 0
-  m_Name: Quad (25)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10142,7 +10421,7 @@ GameObject:
   - component: {fileID: 1629453703}
   - component: {fileID: 1629453702}
   m_Layer: 0
-  m_Name: Quad (57)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10234,7 +10513,7 @@ GameObject:
   - component: {fileID: 1643853916}
   - component: {fileID: 1643853915}
   m_Layer: 0
-  m_Name: Quad (20)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10674,7 +10953,7 @@ GameObject:
   - component: {fileID: 1676095393}
   - component: {fileID: 1676095392}
   m_Layer: 0
-  m_Name: Quad (48)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11202,7 +11481,7 @@ GameObject:
   - component: {fileID: 1869865123}
   - component: {fileID: 1869865122}
   m_Layer: 0
-  m_Name: Quad (21)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11875,7 +12154,7 @@ GameObject:
   - component: {fileID: 1974704215}
   - component: {fileID: 1974704214}
   m_Layer: 0
-  m_Name: Quad (53)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11967,7 +12246,7 @@ GameObject:
   - component: {fileID: 1999035398}
   - component: {fileID: 1999035397}
   m_Layer: 0
-  m_Name: Quad (44)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12059,7 +12338,7 @@ GameObject:
   - component: {fileID: 1999904972}
   - component: {fileID: 1999904971}
   m_Layer: 0
-  m_Name: Quad (43)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12151,7 +12430,7 @@ GameObject:
   - component: {fileID: 2003308715}
   - component: {fileID: 2003308714}
   m_Layer: 0
-  m_Name: Quad (28)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12451,7 +12730,7 @@ GameObject:
   - component: {fileID: 2040676170}
   - component: {fileID: 2040676169}
   m_Layer: 0
-  m_Name: Quad (49)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12543,7 +12822,7 @@ GameObject:
   - component: {fileID: 2045551239}
   - component: {fileID: 2045551238}
   m_Layer: 0
-  m_Name: Quad (35)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12635,7 +12914,7 @@ GameObject:
   - component: {fileID: 2054755974}
   - component: {fileID: 2054755973}
   m_Layer: 0
-  m_Name: Quad (14)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12796,7 +13075,7 @@ GameObject:
   - component: {fileID: 2086627897}
   - component: {fileID: 2086627896}
   m_Layer: 0
-  m_Name: Quad (18)
+  m_Name: floor tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

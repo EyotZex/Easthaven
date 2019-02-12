@@ -190,6 +190,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   maskSize: 0.1
+  soundOrigin: {fileID: 4068462478302222}
   SoundObject: {fileID: 8455745066351210461, guid: 05943d28f8fc3e34b80e209ba2d1fbe8,
     type: 3}
   doorAnimator: {fileID: 0}

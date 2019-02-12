@@ -17,6 +17,8 @@ public class DoorControl : MonoBehaviour {
     public LayerMask playerLayer;
 	public float maskSize;
 
+    public Transform soundOrigin;
+
 	public GameObject SoundObject;
 	public Animator doorAnimator;
 	public AudioSource doorAudiosource;
@@ -71,7 +73,7 @@ public class DoorControl : MonoBehaviour {
                             doorAnimator.Play("LeftdoorClosing", 0, 0.0f);
                         }
                         doorAudiosource.PlayOneShot(doorClosing, 1.0f);
-                        Instantiate(SoundObject, transform.position, Quaternion.identity);
+                        Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);
                         isOpen = false;
                         doorOpenRight = false;
                         doorOpenLeft = false;
@@ -81,7 +83,7 @@ public class DoorControl : MonoBehaviour {
                     {
                         doorAnimator.Play("doorOpening", 0, 0.0f);
                         doorAudiosource.PlayOneShot(doorOpening, 1.0f);
-                        Instantiate(SoundObject, transform.position, Quaternion.identity);
+                        Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);
                         isOpen = true;
                         doorOpenRight = true;
                         DisableCollider();
@@ -91,7 +93,7 @@ public class DoorControl : MonoBehaviour {
                 {
                     doorAnimator.Play("doorLocked", 0, 0.0f);
                     doorAudiosource.PlayOneShot(doorLocked, 1.0f);
-                    Instantiate(SoundObject, transform.position, Quaternion.identity);
+                    Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);
                 }
             }
         }
@@ -112,7 +114,7 @@ public class DoorControl : MonoBehaviour {
                             doorAnimator.Play("doorClosing", 0, 0.0f);
                         }
                         doorAudiosource.PlayOneShot(doorClosing, 1.0f);
-                        Instantiate(SoundObject, transform.position, Quaternion.identity);
+                        Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);
                         isOpen = false;
                         doorOpenLeft = false;
                         doorOpenRight = false;
@@ -122,7 +124,7 @@ public class DoorControl : MonoBehaviour {
                     {
                         doorAnimator.Play("LeftdoorOpening", 0, 0.0f);
                         doorAudiosource.PlayOneShot(doorOpening, 1.0f);
-                        Instantiate(SoundObject, transform.position, Quaternion.identity);
+                        Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);
                         isOpen = true;
                         doorOpenLeft = true;
                         DisableCollider();
@@ -132,7 +134,7 @@ public class DoorControl : MonoBehaviour {
                 {
                     doorAnimator.Play("doorLocked", 0, 0.0f);
                     doorAudiosource.PlayOneShot(doorLocked, 1.0f);
-                    Instantiate(SoundObject, transform.position, Quaternion.identity);
+                    Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);
 
                 }
             }
@@ -161,7 +163,7 @@ public class DoorControl : MonoBehaviour {
 			if (!isOpen) {
 				doorAnimator.Play ("doorLocked", 0, 0.0f);
 				doorAudiosource.PlayOneShot (doorLocked, 1.0f);
-                Instantiate(SoundObject, transform.position, Quaternion.identity);
+                Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);
             }
 		}
 	}
