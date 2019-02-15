@@ -11,7 +11,7 @@ public class FollowWaypoints : MonoBehaviour {
 	public float soundTimer;
 	public float soundTimerStart;
 	public Transform target;
-    public Transform targetSaved;
+	private Vector3 targetPos;
 
     public Transform[] moveSpots;
 	private int randomSpot;
@@ -38,7 +38,7 @@ public class FollowWaypoints : MonoBehaviour {
 
 
 		if (soundTimer > 0) {
-			transform.position = Vector2.MoveTowards (transform.position, target.position, chaseSpeed * Time.deltaTime);
+			transform.position = Vector2.MoveTowards (transform.position, targetPos, chaseSpeed * Time.deltaTime);
 		} else {
             target = moveSpots[randomSpot];
 
@@ -58,6 +58,7 @@ public class FollowWaypoints : MonoBehaviour {
 	public void OnTriggerEnter2D (Collider2D other){
 		if (other.gameObject.tag == "Sound") {
 			target = other.gameObject.transform;
+			targetPos = target.position;
 			soundTimer = soundTimerStart;
             if (monsterSoundTimer < 0)
             {
