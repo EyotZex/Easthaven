@@ -378,4 +378,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2aa4946aee2a6ce40b6db18b4e92780e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  alphaLevel: 0.5
+  alphaLevel: 1

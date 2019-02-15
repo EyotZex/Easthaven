@@ -8,7 +8,7 @@ public class SelfDestroy : MonoBehaviour {
 	Vector3 temp; 
 		
 	void Start () {
-		Destroy (gameObject, 2.0f);
+		Destroy (gameObject, 1.0f);
 	}
 	
 

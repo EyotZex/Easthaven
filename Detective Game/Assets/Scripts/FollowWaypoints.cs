@@ -11,8 +11,9 @@ public class FollowWaypoints : MonoBehaviour {
 	public float soundTimer;
 	public float soundTimerStart;
 	public Transform target;
+    public Transform targetSaved;
 
-	public Transform[] moveSpots;
+    public Transform[] moveSpots;
 	private int randomSpot;
 
     public AudioSource monsterAudioSource;
@@ -21,6 +22,8 @@ public class FollowWaypoints : MonoBehaviour {
     public bool monsterSound;
     public float monsterSoundTimer;
     public float monsterSoundTimerStart;
+
+    
 
     void Start () {
 		waitTime = startWaitTime;
