@@ -93,10 +93,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   signActive: 0
-  textBox: {fileID: 0}
-  textBoxObject: {fileID: 0}
   CanBeInteracted: 0
-  textInfo: EASTHAVEN POLICE DEPARTMENT
+  textInfo: '"Welcome to Easthaven" the Sign is barely readable...'
+  _textManager: {fileID: 0}
 --- !u!61 &7943529340718332434
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -147,5 +146,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1, y: 1.28}
+  m_Size: {x: 1.23, y: 1.46}
   m_EdgeRadius: 0

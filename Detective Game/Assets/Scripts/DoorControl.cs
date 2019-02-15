@@ -56,9 +56,9 @@ public class DoorControl : MonoBehaviour {
         interactRangeLeft = Physics2D.OverlapCircle(LeftOrigin.position, maskSize, playerLayer);
         interactRangeRight = Physics2D.OverlapCircle(RightOrigin.position, maskSize, playerLayer);
 
-        if (interactRangeRight)
+        if (Input.GetMouseButtonDown(1) && CanBeInteracted)
         {
-            if (Input.GetMouseButtonDown(1))
+            if (interactRangeRight)
             {
                 if (hasKey)
                 {
@@ -95,52 +95,51 @@ public class DoorControl : MonoBehaviour {
                     doorAudiosource.PlayOneShot(doorLocked, 1.0f);
                     Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);
                 }
+
             }
-        }
-        if (interactRangeLeft)
-        {
-            if (Input.GetMouseButtonDown(1))
+            if (interactRangeLeft)
             {
-                if (hasKey)
+                if (Input.GetMouseButtonDown(1))
                 {
-                    if (isOpen)
+                    if (hasKey)
                     {
-                        if (doorOpenLeft)
+                        if (isOpen)
                         {
-                            doorAnimator.Play("LeftdoorClosing", 0, 0.0f);
+                            if (doorOpenLeft)
+                            {
+                                doorAnimator.Play("LeftdoorClosing", 0, 0.0f);
+                            }
+                            else
+                            {
+                                doorAnimator.Play("doorClosing", 0, 0.0f);
+                            }
+                            doorAudiosource.PlayOneShot(doorClosing, 1.0f);
+                            Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);
+                            isOpen = false;
+                            doorOpenLeft = false;
+                            doorOpenRight = false;
+                            DisableCollider();
                         }
                         else
                         {
-                            doorAnimator.Play("doorClosing", 0, 0.0f);
+                            doorAnimator.Play("LeftdoorOpening", 0, 0.0f);
+                            doorAudiosource.PlayOneShot(doorOpening, 1.0f);
+                            Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);
+                            isOpen = true;
+                            doorOpenLeft = true;
+                            DisableCollider();
                         }
-                        doorAudiosource.PlayOneShot(doorClosing, 1.0f);
-                        Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);
-                        isOpen = false;
-                        doorOpenLeft = false;
-                        doorOpenRight = false;
-                        DisableCollider();
                     }
                     else
                     {
-                        doorAnimator.Play("LeftdoorOpening", 0, 0.0f);
-                        doorAudiosource.PlayOneShot(doorOpening, 1.0f);
+                        doorAnimator.Play("doorLocked", 0, 0.0f);
+                        doorAudiosource.PlayOneShot(doorLocked, 1.0f);
                         Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);
-                        isOpen = true;
-                        doorOpenLeft = true;
-                        DisableCollider();
+
                     }
                 }
-                else
-                {
-                    doorAnimator.Play("doorLocked", 0, 0.0f);
-                    doorAudiosource.PlayOneShot(doorLocked, 1.0f);
-                    Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);
-
-                }
             }
-        }
-        if (Input.GetMouseButtonDown(1) && CanBeInteracted)
-        {
+
             if (!signActive)
             {
                 _textManager.Canvas.SetActive(true);
@@ -149,9 +148,10 @@ public class DoorControl : MonoBehaviour {
             }
             else
             {
-                _textManager.Canvas.SetActive(false);
-                signActive = false;
+             //   _textManager.Canvas.SetActive(false);
+             //   signActive = false;
             }
+
         }
     }
 	public void OnTriggerEnter2D (Collider2D other){

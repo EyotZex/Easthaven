@@ -17,7 +17,6 @@ public class ImpactSound : MonoBehaviour
         itemAudiosource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         playerProjectileLauncher = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<ProjectileLauncher>();
@@ -28,24 +27,18 @@ public class ImpactSound : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && soundMade && playerProjectileLauncher.hasThrowable == false)
         {
-            if (playerProjectileLauncher.hasThrowable == false)
-            {
-                playerProjectileLauncher.hasThrowable = true;
-                print("goteem");
-                Destroy(gameObject);
-            }
+            playerProjectileLauncher.hasThrowable = true;
+            Destroy(gameObject);
         }
         if (other.gameObject.tag == "Wall" || other.gameObject.tag == "Monster")
         {
+            if (!soundMade)
             {
-                if (!soundMade)
-                {
-                    itemAudiosource.PlayOneShot(impactSound, 1.0f);
-                    Instantiate(SoundObject, transform.position, Quaternion.identity);
-                    soundMade = true;
-                }
+                itemAudiosource.PlayOneShot(impactSound, 1.0f);
+                Instantiate(SoundObject, transform.position, Quaternion.identity);
+                soundMade = true;
             }
         }
     }
