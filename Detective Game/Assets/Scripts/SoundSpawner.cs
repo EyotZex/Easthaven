@@ -9,6 +9,7 @@ public class SoundSpawner : MonoBehaviour {
     public GameObject SoundSmall;
     public GameObject SoundLarge;
     public Transform player;
+    public Transform soundOrigin;
     public AlternativePlayerControls alternativePlayerScript;
     public float SoundTimer;
     public float FullSoundTimer;
@@ -39,19 +40,15 @@ public class SoundSpawner : MonoBehaviour {
         if (alternativePlayerScript.speed == alternativePlayerScript.RunSpeed)
         {
             SoundObject = SoundLarge;
-//            footsteps = runningSound;
             SoundTimer = SoundTimerRunning;
         }
         if (alternativePlayerScript.speed == alternativePlayerScript.WalkSpeed)
         {
             SoundObject = SoundMedium;
-//            footsteps = walkingSound;
             SoundTimer = FullSoundTimer;
         }
-        Instantiate (SoundObject, player.transform.position, Quaternion.identity);
+        Instantiate (SoundObject, soundOrigin.transform.position, Quaternion.identity);
         RunningSteps();
- //       playerAudioSource.Stop();
-//        playerAudioSource.PlayOneShot(footsteps, 1.0f);
     }
     public void RunningSteps()
     {
