@@ -203,6 +203,8 @@ MonoBehaviour:
   ColliderDisableTimer: 0
   ColliderDisableTimerStart: 0.5
   _textManager: {fileID: 0}
+  DoorHP: 5
+  door: {fileID: 1686852162242420}
   textInfo: '
 
 '

@@ -33,8 +33,13 @@ public class DoorControl : MonoBehaviour {
     private bool signActive;
     private bool CanBeInteracted;
     public TextManager _textManager;
+
+    public int DoorHP = 5;
+    public GameObject door;
+
     [TextArea]
     public string textInfo;
+
 
     void Start () {
         _textManager = GameObject.FindGameObjectWithTag("Admin").GetComponentInChildren<TextManager>();
@@ -47,6 +52,12 @@ public class DoorControl : MonoBehaviour {
 	}
     void Update()
     {
+        if(DoorHP == 0)
+        {
+            DoorHP--;
+            doorAudiosource.PlayOneShot(doorLocked, 1.0f);
+            Destroy(door, 0.4f);
+        }
         ColliderDisableTimer -= Time.deltaTime;
         if (ColliderDisableTimer <= 0)
         {
@@ -161,6 +172,7 @@ public class DoorControl : MonoBehaviour {
         }
         if (other.gameObject.tag == "Monster") {
 			if (!isOpen) {
+                DoorHP--;
 				doorAnimator.Play ("doorLocked", 0, 0.0f);
 				doorAudiosource.PlayOneShot (doorLocked, 1.0f);
                 Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);

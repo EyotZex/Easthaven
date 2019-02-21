@@ -913,22 +913,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2460321476866535202, guid: cb656ffdfdde3e448ab3563834f8eea1,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.59999996
-      objectReference: {fileID: 0}
-    - target: {fileID: 2460321476866535202, guid: cb656ffdfdde3e448ab3563834f8eea1,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.31394
-      objectReference: {fileID: 0}
-    - target: {fileID: 2460321476866535231, guid: cb656ffdfdde3e448ab3563834f8eea1,
-        type: 3}
-      propertyPath: SoundObject
-      value: 
-      objectReference: {fileID: 8455745066351210461, guid: 05943d28f8fc3e34b80e209ba2d1fbe8,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb656ffdfdde3e448ab3563834f8eea1, type: 3}
 --- !u!4 &81243404 stripped

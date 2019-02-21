@@ -9,16 +9,24 @@ public class windowShatter : MonoBehaviour
     public GameObject brokenGlass;
     public GameObject SoundObject;
 
-    // Start is called before the first frame update
+    public int WindowHP = 2;
+    public GameObject Window;
+
     void Start()
     {
         windowAudiosource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (WindowHP == 0)
+        {
+            WindowHP--;
+            windowAudiosource.PlayOneShot(shatterSound, 1.0f);
+            Instantiate(brokenGlass, transform.position, transform.rotation);
+            Instantiate(SoundObject, transform.position, Quaternion.identity);
+            Destroy(gameObject, 0.6f);
+        }
     }
     public void OnTriggerEnter2D(Collider2D other)
     {
@@ -28,6 +36,10 @@ public class windowShatter : MonoBehaviour
             Instantiate(brokenGlass, transform.position, transform.rotation);
             Instantiate(SoundObject, transform.position, Quaternion.identity);
             Destroy(gameObject, 0.6f);
+        }
+        if (other.gameObject.tag == "Monster")
+        {
+            WindowHP--;
         }
     }
 }
