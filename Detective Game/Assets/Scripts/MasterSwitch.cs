@@ -23,7 +23,7 @@ public class MasterSwitch : MonoBehaviour
 
         if (interactRange)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetMouseButtonDown(1))
             {
                 if (automaticDoorScript.isOpen == false)
                 {
