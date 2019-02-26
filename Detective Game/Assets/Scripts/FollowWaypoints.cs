@@ -23,7 +23,10 @@ public class FollowWaypoints : MonoBehaviour {
     public float monsterSoundTimer;
     public float monsterSoundTimerStart;
 
-    
+    public float wayponitTimer;
+    public float wayponitTimerStart = 5f;
+
+
 
     void Start () {
 		waitTime = startWaitTime;
@@ -35,9 +38,15 @@ public class FollowWaypoints : MonoBehaviour {
 
         monsterSoundTimer -= Time.deltaTime;
 		soundTimer  -= Time.deltaTime;
+        wayponitTimer -= Time.deltaTime;
 
+        if(wayponitTimer < 0)
+        {
+            randomSpot = Random.Range(0, moveSpots.Length);
+            wayponitTimer = wayponitTimerStart;
+        }
 
-		if (soundTimer > 0) {
+        if (soundTimer > 0) {
 			transform.position = Vector2.MoveTowards (transform.position, targetPos, chaseSpeed * Time.deltaTime);
 		} else {
             target = moveSpots[randomSpot];
@@ -46,6 +55,7 @@ public class FollowWaypoints : MonoBehaviour {
 			if (Vector2.Distance (transform.position, moveSpots [randomSpot].position) < 0.2f) {
 				if (waitTime <= 0) {
 					randomSpot = Random.Range (0, moveSpots.Length);
+                    wayponitTimer = wayponitTimerStart;
 					waitTime = startWaitTime;
 				} else {
 					waitTime -= Time.deltaTime;

@@ -95,13 +95,14 @@ MonoBehaviour:
   moveSpots:
   - {fileID: 1819194289}
   - {fileID: 1714943373}
-  - {fileID: 2105520435}
   monsterAudioSource: {fileID: 0}
   momonsterChasing: {fileID: 8300000, guid: 7877c8151353171408ef014eb3d13e1e, type: 3}
   monsterRoar: {fileID: 0}
   monsterSound: 0
   monsterSoundTimer: 0
   monsterSoundTimerStart: 5
+  wayponitTimer: 0
+  wayponitTimerStart: 5
 --- !u!82 &3463069652383030360
 AudioSource:
   m_ObjectHideFlags: 0
