@@ -25,6 +25,10 @@ public class Admin : MonoBehaviour
     {
         SceneManager.LoadScene("Controls");
     }
+    public void Exit()
+    {
+        Application.Quit();
+    }
     public void Chapter0() {
         SceneManager.LoadScene("Chapter 0");
     }
@@ -43,5 +47,9 @@ public class Admin : MonoBehaviour
 
     public void Chapter4() {
         SceneManager.LoadScene("Chapter 4");
+    }
+    public void Chapter5()
+    {
+        SceneManager.LoadScene("Chapter 5");
     }
 }

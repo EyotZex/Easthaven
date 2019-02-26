@@ -87,7 +87,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
-  chaseSpeed: 4
+  chaseSpeed: 3
   startWaitTime: 0.1
   soundTimer: 0
   soundTimerStart: 5
