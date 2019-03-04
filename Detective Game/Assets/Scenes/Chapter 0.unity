@@ -2812,7 +2812,7 @@ PrefabInstance:
     - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: textInfo
-      value: '[DOUBLE LEFT CLICK TO RUN. RUNNING IS MUCH LOUDER THAN WALKING]'
+      value: '[HOLD "RIGHT CLICK" TO RUN. RUNNING IS MUCH LOUDER THAN WALKING]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb6416b8ea353b4ba915e0763c528eb, type: 3}
@@ -10593,7 +10593,8 @@ PrefabInstance:
       propertyPath: textInfo
       value: 'Lots of trash here. Maybe i can throw it...
 
-        [HOLD RIGHT CLICK TO THROW. LEFT CLICK TO CANCEL]
+
+        [PRESS "W"TO THROW]
 
 '
       objectReference: {fileID: 0}
@@ -13502,7 +13503,7 @@ PrefabInstance:
     - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: textInfo
-      value: '[CLICK RIGHT MOUSE BUTTON TO INTERACT WITH OBJECTS]'
+      value: '[PRESS "E" TO INTERACT WITH OBJECTS]'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb6416b8ea353b4ba915e0763c528eb, type: 3}
@@ -14451,6 +14452,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Admin
       objectReference: {fileID: 0}
+    - target: {fileID: 5221171229910051908, guid: e407c9de0c821814795c37e9c2f37a5c,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5221171229910051908, guid: e407c9de0c821814795c37e9c2f37a5c,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5221171229910051908, guid: e407c9de0c821814795c37e9c2f37a5c,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 5221171231136845754, guid: e407c9de0c821814795c37e9c2f37a5c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14510,21 +14526,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5221171229910051908, guid: e407c9de0c821814795c37e9c2f37a5c,
-        type: 3}
-      propertyPath: m_FontData.m_MaxSize
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 5221171229910051908, guid: e407c9de0c821814795c37e9c2f37a5c,
-        type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 5221171229910051908, guid: e407c9de0c821814795c37e9c2f37a5c,
-        type: 3}
-      propertyPath: m_FontData.m_MinSize
-      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5221171230164451496, guid: e407c9de0c821814795c37e9c2f37a5c,
         type: 3}

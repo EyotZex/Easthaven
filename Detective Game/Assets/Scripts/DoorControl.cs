@@ -67,7 +67,7 @@ public class DoorControl : MonoBehaviour {
         interactRangeLeft = Physics2D.OverlapCircle(LeftOrigin.position, maskSize, playerLayer);
         interactRangeRight = Physics2D.OverlapCircle(RightOrigin.position, maskSize, playerLayer);
 
-        if (Input.GetMouseButtonDown(1) && CanBeInteracted)
+        if (Input.GetKeyDown(KeyCode.E) && CanBeInteracted)
         {
             if (interactRangeRight)
             {
@@ -110,7 +110,7 @@ public class DoorControl : MonoBehaviour {
             }
             if (interactRangeLeft)
             {
-                if (Input.GetMouseButtonDown(1))
+                if (Input.GetKeyDown(KeyCode.E))
                 {
                     if (hasKey)
                     {

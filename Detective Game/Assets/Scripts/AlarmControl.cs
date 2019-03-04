@@ -10,7 +10,7 @@ public class AlarmControl : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(1) && CanBeInteracted)
+        if (Input.GetKeyDown(KeyCode.E) && CanBeInteracted)
         {
             if (alarmScript.alarmOn)
             {

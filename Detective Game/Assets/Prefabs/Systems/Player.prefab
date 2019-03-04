@@ -709,7 +709,7 @@ MonoBehaviour:
   shotPoint: {fileID: 2263691688349161043}
   hasThrowable: 0
   projectileIcon: {fileID: 1081481371}
-  projectileReadyIcon: {fileID: 9209341196168855822}
+  projectileReadyIcon: {fileID: 1081481371}
   alternativePlayerScript: {fileID: 3766145355019269771}
   doubleclickDetectScript: {fileID: 1914945147}
   holdRightClick: 0
@@ -1030,7 +1030,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2401791514215960524
 Transform:
   m_ObjectHideFlags: 0

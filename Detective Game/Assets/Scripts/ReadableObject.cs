@@ -16,7 +16,7 @@ public class ReadableObject : MonoBehaviour{
     }
 
     void Update(){
-        if (Input.GetMouseButtonDown(1) && CanBeInteracted)
+        if (Input.GetKeyDown(KeyCode.E) && CanBeInteracted)
         {
             if (!signActive)
             {

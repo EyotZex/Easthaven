@@ -556,13 +556,13 @@ MonoBehaviour:
   m_Text: 'Hold Left Mouse Button - Walking
 
 
-    Double Click Left Mouse Button - Sprinting
+    Hold Right Mouse Button - Sprinting
 
 
-    Click Right Mouse Button - Interact with enviroment
+    E - Interact with enviroment
 
 
-    Hold Right Mouse Button - Fire Projectile
+    W - Fire Projectile
 
 
     ESC - Return to Menu'

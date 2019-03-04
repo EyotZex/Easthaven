@@ -18,25 +18,27 @@ public class ProjectileLauncher : MonoBehaviour
     void Update()
     {
 
+        if (hasThrowable && Input.GetKeyDown(KeyCode.W))
+        {
+
+            Instantiate(projectile, shotPoint.position, shotPoint.rotation);
+            hasThrowable = false;
+        }
+
         if (hasThrowable)
         {
-            if (holdRightClick >= holdRequired)
-            {
-                projectileReadyIcon.SetActive(true);
-                projectileIcon.SetActive(false);
-            }
-            else
-            {
-                projectileReadyIcon.SetActive(false);
-                projectileIcon.SetActive(true);
-            }
+            projectileIcon.SetActive(true);
         }
         else
         {
-            projectileReadyIcon.SetActive(false);
             projectileIcon.SetActive(false);
         }
+    }
+}
 
+
+    
+/*
         if (Input.GetMouseButtonDown(1))
         {
             readyToThrow = true;
@@ -66,3 +68,4 @@ public class ProjectileLauncher : MonoBehaviour
         }
     }
 }
+*/

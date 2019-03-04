@@ -14,7 +14,7 @@ public class key : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(1) && CanBeInteracted)
+        if (Input.GetKeyDown(KeyCode.E) && CanBeInteracted)
         {
             print("key");
             doorScript.hasKey = true;

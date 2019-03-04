@@ -30,7 +30,7 @@ public class AlternativePlayerControls : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            if (doubleclickDetectScript.DoubleClicked)
+            if (Input.GetMouseButton(1))
             {
                 speed = RunSpeed;
             }
@@ -47,4 +47,4 @@ public class AlternativePlayerControls : MonoBehaviour
             playerStill = true;
         }
     }
-}
+}  
