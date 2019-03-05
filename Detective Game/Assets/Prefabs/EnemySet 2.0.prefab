@@ -52,7 +52,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.55
+  m_Radius: 0.64
 --- !u!50 &8308982797816103059
 Rigidbody2D:
   serializedVersion: 4
@@ -97,7 +97,7 @@ MonoBehaviour:
   - {fileID: 1714943373}
   monsterAudioSource: {fileID: 0}
   momonsterChasing: {fileID: 8300000, guid: 7877c8151353171408ef014eb3d13e1e, type: 3}
-  monsterRoar: {fileID: 0}
+  monsterRoar: {fileID: 8300000, guid: e1d2736038967a54f8000a0d573fb860, type: 3}
   monsterSound: 0
   monsterSoundTimer: 0
   monsterSoundTimerStart: 5
@@ -710,6 +710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2612597591830b4c8ac87bd079aa85f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  admin: {fileID: 0}
 --- !u!1 &3781683902137237627
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,7 +824,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8858709996837321088}
-  m_LocalRotation: {x: -0, y: -0, z: -0.000000014901161, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.61, y: 18.21, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

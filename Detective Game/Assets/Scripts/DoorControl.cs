@@ -150,8 +150,8 @@ public class DoorControl : MonoBehaviour {
                     }
                 }
             }
-
-            if (!signActive)
+            
+            if (!signActive && !hasKey)
             {
                 _textManager.Canvas.SetActive(true);
                 _textManager.canvasText.text = textInfo;

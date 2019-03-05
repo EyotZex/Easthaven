@@ -912,7 +912,7 @@ Transform:
   - {fileID: 560629314}
   - {fileID: 2145909337}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &106600400
 GameObject:
@@ -3215,6 +3215,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224049866075220336, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.55
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
 --- !u!1 &560629313
@@ -5227,7 +5232,7 @@ Transform:
   - {fileID: 1384803645}
   - {fileID: 1764311193}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &808462741 stripped
 Transform:
@@ -5980,6 +5985,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 930594502}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &930594504 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8986467696496244956, guid: cc7ab98f6e295ea4b944e19a63ec585b,
+    type: 3}
+  m_PrefabInstance: {fileID: 930594502}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cea688165e0635d4883c3a9e4b93a438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &933299433
 GameObject:
   m_ObjectHideFlags: 0
@@ -7945,7 +7962,7 @@ Transform:
   m_Children:
   - {fileID: 1200630149}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1186103441
 MonoBehaviour:
@@ -10468,7 +10485,7 @@ PrefabInstance:
     - target: {fileID: 5221171231136845754, guid: e407c9de0c821814795c37e9c2f37a5c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5221171231136845754, guid: e407c9de0c821814795c37e9c2f37a5c,
         type: 3}
@@ -10485,6 +10502,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1130766261, guid: e407c9de0c821814795c37e9c2f37a5c, type: 3}
+      propertyPath: playerScript
+      value: 
+      objectReference: {fileID: 2263691688722992745}
+    - target: {fileID: 1130766261, guid: e407c9de0c821814795c37e9c2f37a5c, type: 3}
+      propertyPath: fadeScript
+      value: 
+      objectReference: {fileID: 930594504}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e407c9de0c821814795c37e9c2f37a5c, type: 3}
 --- !u!1 &1571836940
@@ -11976,7 +12001,7 @@ PrefabInstance:
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
@@ -12006,7 +12031,7 @@ PrefabInstance:
     - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: textInfo
-      value: Oh god.. Something ripped this man apart. A cop... John Turner according
+      value: Oh god.. Something ripped this man apart. A cop... Oliver Hughes according
         to his badge. What the hell is going on?!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12058,6 +12083,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2612597591830b4c8ac87bd079aa85f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  admin: {fileID: 0}
 --- !u!61 &1954238261
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12664,7 +12690,7 @@ PrefabInstance:
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
@@ -13458,8 +13484,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3766145355019269771, guid: f061163687acb0f43a7dc2664eab3330,
+        type: 3}
+      propertyPath: fadeScript
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f061163687acb0f43a7dc2664eab3330, type: 3}
+--- !u!114 &2263691688722992745 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3766145355019269771, guid: f061163687acb0f43a7dc2664eab3330,
+    type: 3}
+  m_PrefabInstance: {fileID: 2263691688722992744}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e809e50956f10ae4895995931da2a011, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2460321476787782190
 PrefabInstance:
   m_ObjectHideFlags: 0

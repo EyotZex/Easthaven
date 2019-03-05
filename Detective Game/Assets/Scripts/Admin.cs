@@ -5,21 +5,52 @@ using UnityEngine.SceneManagement;
 
 public class Admin : MonoBehaviour
 {
+    public bool PlayerDead;
+    public AlternativePlayerControls playerScript;
+    public FadeOUT fadeScript;
+    public float Timer = 2f;
+    public bool startTimer = false;
+    public string sceneToLoad;
+    public int deathScenario = 0;
+    public bool activated = false;
+    public AudioClip deathSound;
+    public AudioSource deathSource;
 
-    public bool Sprint;
-    public bool Sneak;
-    public bool Interact;
-    public bool Throw;
 
     void Start()
     {
-        
+        playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<AlternativePlayerControls>();
+        deathSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (startTimer)
+        {
+            Timer -= Time.deltaTime;
+        }
+
+        if (Timer < 0)
+        {
+            if (deathScenario == 0)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
+            if (deathScenario == 1)
+            {
+                SceneManager.LoadScene(sceneToLoad);
+            }
+        }
+        if (!activated) {
+            if (PlayerDead)
+            {
+                fadeScript.Reverse = true;
+                startTimer = true;
+                playerScript.playerDied = true;
+                deathSource.PlayOneShot(deathSound, 1f);
+                activated = true;
+            }
+        }
     }
     public void Controls()
     {
@@ -27,10 +58,11 @@ public class Admin : MonoBehaviour
     }
     public void Exit()
     {
+        Time.timeScale = 1f;
         Application.Quit();
     }
     public void Chapter0() {
-        SceneManager.LoadScene("Chapter 0");
+        SceneManager.LoadScene("Chapter TheEnd");
     }
 
     public void Chapter1() {
@@ -51,5 +83,13 @@ public class Admin : MonoBehaviour
     public void Chapter5()
     {
         SceneManager.LoadScene("Chapter 5");
+    }
+    public void Chapter6()
+    {
+        SceneManager.LoadScene("Chapter 6");
+    }
+    public void Chapter7()
+    {
+        SceneManager.LoadScene("Chapter 7");
     }
 }

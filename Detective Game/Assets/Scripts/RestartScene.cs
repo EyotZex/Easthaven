@@ -3,21 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class RestartScene : MonoBehaviour {
+public class RestartScene : MonoBehaviour
+{
+    public Admin admin;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
-	void OnTriggerEnter2D (Collider2D player){
-		if (player.gameObject.tag == "Player"){
-			SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
-		}
-	}
+    void Start()
+    {
+        admin = GameObject.FindGameObjectWithTag("Admin").GetComponent<Admin>();
+    }
+
+
+    void OnTriggerEnter2D(Collider2D player)
+    {
+        if (player.gameObject.tag == "Player")
+        {
+                admin.PlayerDead = true;
+        }
+    }
 }

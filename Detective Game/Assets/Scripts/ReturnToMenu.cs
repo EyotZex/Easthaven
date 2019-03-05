@@ -16,6 +16,7 @@ public class ReturnToMenu : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)){
+            Time.timeScale = 1f;
             SceneManager.LoadScene(chapterName);
         }
     }

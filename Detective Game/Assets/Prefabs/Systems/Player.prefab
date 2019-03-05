@@ -731,8 +731,10 @@ MonoBehaviour:
   WalkSpeed: 2
   RunSpeed: 4
   playerStill: 0
+  PlayerActive: 1
   rb: {fileID: 2263691688335503042}
   doubleclickDetectScript: {fileID: 1914945147}
+  fadeScript: {fileID: 0}
 --- !u!114 &1914945147
 MonoBehaviour:
   m_ObjectHideFlags: 0

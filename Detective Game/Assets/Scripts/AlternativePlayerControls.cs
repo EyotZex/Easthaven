@@ -9,9 +9,11 @@ public class AlternativePlayerControls : MonoBehaviour
     public float WalkSpeed;
     public float RunSpeed;
     public bool playerStill;
+    public bool playerDied;
 
     public Rigidbody2D rb;
     public DoubleClickDetect doubleclickDetectScript;
+
 
     void Start()
     {
@@ -25,26 +27,31 @@ public class AlternativePlayerControls : MonoBehaviour
         var dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
         var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+
     }
     void FixedUpdate()
     {
-        if (Input.GetMouseButton(0))
+        if (!playerDied)
         {
-            if(Input.GetKey(KeyCode.Space))
+            if (Input.GetMouseButton(0))
             {
-                speed = RunSpeed;
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    speed = RunSpeed;
+                }
+                else
+                {
+                    speed = WalkSpeed;
+                }
+                rb.velocity = transform.right * speed;
+                playerStill = false;
             }
             else
             {
-                speed = WalkSpeed;
+                rb.velocity = transform.right * 0;
+                playerStill = true;
             }
-            rb.velocity = transform.right * speed;
-            playerStill = false;
-        }
-        else
-        {
-            rb.velocity = transform.right * 0;
-            playerStill = true;
         }
     }
-}  
+}
