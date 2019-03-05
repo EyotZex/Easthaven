@@ -30,7 +30,7 @@ public class AlternativePlayerControls : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            if((Input.GetKey(KeyCode.LeftShift) || (Input.GetMouseButton(1))))
+            if(Input.GetKey(KeyCode.Space))
             {
                 speed = RunSpeed;
             }

@@ -18,7 +18,7 @@ public class ProjectileLauncher : MonoBehaviour
     void Update()
     {
 
-        if (hasThrowable && Input.GetKeyDown(KeyCode.W))
+        if (hasThrowable && Input.GetMouseButtonDown(1))
         {
 
             Instantiate(projectile, shotPoint.position, shotPoint.rotation);

@@ -553,16 +553,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Hold Left Mouse Button - Walking
+  m_Text: 'HOLD Left Mouse - Walking
 
 
-    Hold Right Mouse Button - Sprinting
+    SPACE - Sprinting
+
+
+    PRESS Right Mouse - Fire Projectile
 
 
     E - Interact with enviroment
-
-
-    W - Fire Projectile
 
 
     ESC - Return to Menu'
