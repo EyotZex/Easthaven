@@ -53,5 +53,9 @@ public class AlternativePlayerControls : MonoBehaviour
                 playerStill = true;
             }
         }
+        else
+        {
+            rb.velocity = transform.right * 0;
+        }
     }
 }
