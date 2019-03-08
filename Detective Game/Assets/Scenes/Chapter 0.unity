@@ -1257,8 +1257,8 @@ PrefabInstance:
     - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: textInfo
-      value: Damn it! care engine is till still broken. Guess i'll have to walk my
-        way through this place...
+      value: Damn it! care engine is still broken. Guess i'll have to walk my way
+        through this place...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb6416b8ea353b4ba915e0763c528eb, type: 3}
