@@ -12031,7 +12031,7 @@ PrefabInstance:
     - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: textInfo
-      value: Oh god.. Something ripped this man apart. A cop... Oliver Hughes according
+      value: Oh god... Something ripped this man apart. A cop... Oliver Hughes according
         to his badge. What the hell is going on?!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12725,7 +12725,7 @@ PrefabInstance:
     - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: textInfo
-      value: I think something is moving inside..
+      value: I think something is moving inside...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb6416b8ea353b4ba915e0763c528eb, type: 3}
