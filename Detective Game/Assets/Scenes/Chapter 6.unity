@@ -20777,6 +20777,18 @@ PrefabInstance:
       propertyPath: fadeScript
       value: 
       objectReference: {fileID: 340358815}
+    - target: {fileID: 2005633240717465324, guid: e407c9de0c821814795c37e9c2f37a5c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283542905911059318, guid: e407c9de0c821814795c37e9c2f37a5c,
+        type: 3}
+      propertyPath: m_Text
+      value: "CHAPTER seven\n\n\nthis place... he set up a laboratory in abandoned
+        manitanance tunnels. the container yard was directly above it. \nwhat the
+        hell is he after?!\n\n\n\n[PRESS SPACE TO CONTINUE]"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e407c9de0c821814795c37e9c2f37a5c, type: 3}
 --- !u!1001 &1245716389
@@ -30351,7 +30363,7 @@ PrefabInstance:
     - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: textInfo
-      value: There is plans here. For the Easthaven power plant... but he drew over
+      value: There are plans here. For the Easthaven power plant... but he drew over
         them. Added cables, and modyfing the grid. All leading to a large box he drew
         at the center?
       objectReference: {fileID: 0}

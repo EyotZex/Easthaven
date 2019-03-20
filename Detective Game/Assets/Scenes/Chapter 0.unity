@@ -4645,7 +4645,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &598209502
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10898,10 +10898,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "I have been sent to investigate a distress call in a place called Easthaven.
-    A single message has been recieved, before the town went dark. \n\n\"SEND HELP...
-    WE HAVE SEEN THE VOID AND ARE UNWILLING TO VISIT THE TIMES OF OUR OWN ESSENCE\"\n\nI
-    was the first one to respond.\n\n\n\n\n[PRESS SPACE TO BEGIN]"
+  m_Text: "PROLOGUE\n\n\nI have been sent to investigate a distress call in a place
+    called Easthaven. A single message has been recieved, before the town went dark.
+    \n\n\"SEND HELP... WE HAVE SEEN THE VOID AND ARE UNWILLING TO VISIT THE TIMES
+    OF OUR OWN ESSENCE\"\n\nI was the first one to respond.\n\n\n[PRESS SPACE TO BEGIN]"
 --- !u!222 &1475046991
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13929,6 +13929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a2612597591830b4c8ac87bd079aa85f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  admin: {fileID: 0}
 --- !u!61 &1954238261
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15241,6 +15242,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1283542905911059318, guid: e407c9de0c821814795c37e9c2f37a5c,
+        type: 3}
+      propertyPath: m_Text
+      value: "CHAPTER ONE\n\nI have been sent to investigate a distress call in a
+        place called Easthaven. A single message has been recieved, before the town
+        went dark. \n\n\"SEND HELP... WE HAVE SEEN THE VOID AND ARE UNWILLING TO VISIT
+        THE TIMES OF OUR OWN ESSENCE\"\n\nI was the first one to respond.\n\n\n[PRESS
+        SPACE TO BEGIN]"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2005633240717465324, guid: e407c9de0c821814795c37e9c2f37a5c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5221171231136845752, guid: e407c9de0c821814795c37e9c2f37a5c,
         type: 3}
       propertyPath: m_Name
