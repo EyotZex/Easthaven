@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d68b1e4ccf2ce804db4ab607187ab12b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasKey: 1
+  hasKey: 0
   isOpen: 1
   LeftOrigin: {fileID: 468086928}
   RightOrigin: {fileID: 2013655542}
@@ -198,14 +198,15 @@ MonoBehaviour:
   doorAudiosource: {fileID: 0}
   doorOpening: {fileID: 8300000, guid: b9a05bb41b5f5d847a0bb573a3dc1583, type: 3}
   doorClosing: {fileID: 8300000, guid: 333f72e8b6e256d4bb054c68c3111332, type: 3}
-  doorLocked: {fileID: 8300000, guid: 4623eaa15e9622649bd39df895009dee, type: 3}
+  doorLocked: {fileID: 8300000, guid: fe34e73525c30874abaa2df37f2a44c2, type: 3}
   doorCollider: {fileID: 1888617115100922}
   ColliderDisableTimer: 0
   ColliderDisableTimerStart: 0.5
   _textManager: {fileID: 0}
+  textToInteract: Press E to interact
   DoorHP: 5
   door: {fileID: 1686852162242420}
-  textInfo: '
+  textInfo: 'Looks like they closed up for the night
 
 '
 --- !u!95 &95149878244453552

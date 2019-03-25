@@ -7,8 +7,9 @@ public class TextManager : MonoBehaviour
 {
     public bool textBox;
     public GameObject Canvas;
+    public GameObject Canvas2;
     public Text canvasText;
-
+    public Text canvasText2;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,3 +22,4 @@ public class TextManager : MonoBehaviour
         
     }
 }
+

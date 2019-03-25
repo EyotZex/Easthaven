@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class DoorControl : MonoBehaviour {
 
-	public bool hasKey = false;
-	public bool isOpen = false;
+    public bool hasKey = false;
+    public bool isOpen = false;
     private bool doorOpenLeft = false;
     private bool doorOpenRight = false;
 
@@ -15,16 +15,16 @@ public class DoorControl : MonoBehaviour {
     public Transform LeftOrigin;
     public Transform RightOrigin;
     public LayerMask playerLayer;
-	public float maskSize;
+    public float maskSize;
 
     public Transform soundOrigin;
 
-	public GameObject SoundObject;
-	public Animator doorAnimator;
-	public AudioSource doorAudiosource;
-	public AudioClip doorOpening;
-	public AudioClip doorClosing;
-	public AudioClip doorLocked;
+    public GameObject SoundObject;
+    public Animator doorAnimator;
+    public AudioSource doorAudiosource;
+    public AudioClip doorOpening;
+    public AudioClip doorClosing;
+    public AudioClip doorLocked;
 
     public GameObject doorCollider;
     public float ColliderDisableTimer;
@@ -33,6 +33,7 @@ public class DoorControl : MonoBehaviour {
     private bool signActive;
     private bool CanBeInteracted;
     public TextManager _textManager;
+    public string textToInteract = "Press E to interact";
 
     public int DoorHP = 5;
     public GameObject door;
@@ -41,18 +42,18 @@ public class DoorControl : MonoBehaviour {
     public string textInfo;
 
 
-    void Start () {
+    void Start() {
         _textManager = GameObject.FindGameObjectWithTag("Admin").GetComponentInChildren<TextManager>();
-        doorAnimator = GetComponent<Animator> ();
-		doorAudiosource = GetComponent<AudioSource> ();
-		if (isOpen) {
-			doorAnimator.Play ("doorClosing", 0, 0.0f);
-			isOpen = false;
-		}
-	}
+        doorAnimator = GetComponent<Animator>();
+        doorAudiosource = GetComponent<AudioSource>();
+        if (isOpen) {
+            doorAnimator.Play("doorClosing", 0, 0.0f);
+            isOpen = false;
+        }
+    }
     void Update()
     {
-        if(DoorHP == 0)
+        if (DoorHP == 0)
         {
             DoorHP--;
             doorAudiosource.PlayOneShot(doorLocked, 1.0f);
@@ -69,10 +70,11 @@ public class DoorControl : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.E) && CanBeInteracted)
         {
-            if (interactRangeRight)
+            if (hasKey)
             {
-                if (hasKey)
+                if (interactRangeRight)
                 {
+
                     if (isOpen)
                     {
                         if (doorOpenRight)
@@ -100,20 +102,13 @@ public class DoorControl : MonoBehaviour {
                         DisableCollider();
                     }
                 }
-                else
-                {
-                    doorAnimator.Play("doorLocked", 0, 0.0f);
-                    doorAudiosource.PlayOneShot(doorLocked, 1.0f);
-                    Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);
-                }
 
-            }
-            if (interactRangeLeft)
-            {
-                if (Input.GetKeyDown(KeyCode.E))
+
+                if (interactRangeLeft)
                 {
-                    if (hasKey)
+                    if (Input.GetKeyDown(KeyCode.E))
                     {
+
                         if (isOpen)
                         {
                             if (doorOpenLeft)
@@ -141,34 +136,41 @@ public class DoorControl : MonoBehaviour {
                             DisableCollider();
                         }
                     }
-                    else
-                    {
-                        doorAnimator.Play("doorLocked", 0, 0.0f);
-                        doorAudiosource.PlayOneShot(doorLocked, 1.0f);
-                        Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);
-
-                    }
                 }
-            }
-            
-            if (!signActive && !hasKey)
-            {
-                _textManager.Canvas.SetActive(true);
-                _textManager.canvasText.text = textInfo;
-                signActive = true;
             }
             else
             {
-             //   _textManager.Canvas.SetActive(false);
-             //   signActive = false;
+                if (!signActive)
+                {
+                    Time.timeScale = 0f;
+                    _textManager.Canvas2.SetActive(true);
+                    _textManager.canvasText2.text = textInfo;
+                    signActive = true;
+                    _textManager.Canvas.SetActive(false);
+                    Cursor.lockState = CursorLockMode.Locked;
+                    doorAnimator.Play("doorLocked", 0, 0.0f);
+                    doorAudiosource.PlayOneShot(doorLocked, 1.0f);
+                    Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);
+                }
+                else
+                {
+                    Time.timeScale = 1f;
+                    _textManager.Canvas2.SetActive(false);
+                    signActive = false;
+                    _textManager.Canvas.SetActive(true);
+                    _textManager.canvasText.text = textToInteract;
+                    Cursor.lockState = CursorLockMode.None;
+                }
             }
-
         }
     }
+
 	public void OnTriggerEnter2D (Collider2D other){
         if (other.gameObject.tag == "Player")
         {
             CanBeInteracted = true;
+            _textManager.Canvas.SetActive(true);
+            _textManager.canvasText.text = textToInteract;
         }
         if (other.gameObject.tag == "Monster") {
 			if (!isOpen) {

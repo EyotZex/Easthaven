@@ -8,6 +8,7 @@ public class ReadableObject : MonoBehaviour{
     public bool CanBeInteracted;
     [TextArea]
     public string textInfo;
+    public string textToInteract = "Press E to interact";
     public TextManager _textManager;
 
     void Start()
@@ -20,14 +21,21 @@ public class ReadableObject : MonoBehaviour{
         {
             if (!signActive)
             {
-                _textManager.Canvas.SetActive(true);
-                _textManager.canvasText.text = textInfo;
+                Time.timeScale = 0f;
+                _textManager.Canvas2.SetActive(true);
+                _textManager.canvasText2.text = textInfo;
                 signActive = true;
+                _textManager.Canvas.SetActive(false);
+                Cursor.lockState = CursorLockMode.Locked;
             }
             else
             {
-                _textManager.Canvas.SetActive(false);
+                Time.timeScale = 1f;
+                _textManager.Canvas2.SetActive(false);
                 signActive = false;
+                _textManager.Canvas.SetActive(true);
+                _textManager.canvasText.text = textToInteract;
+                Cursor.lockState = CursorLockMode.None;
             }
         }
     }
@@ -36,6 +44,8 @@ public class ReadableObject : MonoBehaviour{
         if (other.gameObject.tag == "Player")
         {
             CanBeInteracted = true;
+            _textManager.Canvas.SetActive(true);
+            _textManager.canvasText.text = textToInteract;
         }
     }
     public void OnTriggerExit2D(Collider2D other)
