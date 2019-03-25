@@ -62,7 +62,7 @@ public class Admin : MonoBehaviour
         Application.Quit();
     }
     public void Chapter0() {
-        SceneManager.LoadScene("Chapter TheEnd");
+        SceneManager.LoadScene("Chapter 0");
     }
 
     public void Chapter1() {
