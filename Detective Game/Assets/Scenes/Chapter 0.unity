@@ -1188,7 +1188,7 @@ PrefabInstance:
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26.9
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
@@ -1243,7 +1243,7 @@ PrefabInstance:
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 6.9235845
+      value: 7.680852
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
@@ -1260,6 +1260,11 @@ PrefabInstance:
       propertyPath: textInfo
       value: Damn it! the car engine is still broken. Guess I'll have to walk my way
         through this place...
+      objectReference: {fileID: 0}
+    - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb6416b8ea353b4ba915e0763c528eb, type: 3}
@@ -1783,6 +1788,29 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207214667}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &208488078 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 48811764062307350, guid: bbb6416b8ea353b4ba915e0763c528eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 152975891}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &208488079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208488078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6835a3af3589ded40951c8bdd13c0f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  signActive: 0
+  CanBeInteracted: 0
+  textInfo: Damn it! the car engine wont start. Guess I'm walking from here...
+  textToInteract: Press E to interact
+  _textManager: {fileID: 0}
 --- !u!4 &213486010 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
@@ -2931,7 +2959,7 @@ PrefabInstance:
     - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: textInfo
-      value: '[HOLD "SPACE" TO RUN. RUNNING IS MUCH LOUDER THAN WALKING]'
+      value: HOLD SPACE + L.MOUSE TO RUN
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb6416b8ea353b4ba915e0763c528eb, type: 3}
@@ -5244,6 +5272,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorScript: {fileID: 1352392097}
+  _textManager: {fileID: 0}
+  textToInteract: Press E to interact
 --- !u!61 &714752241
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5867,6 +5897,11 @@ PrefabInstance:
     - target: {fileID: 4327056494415046, guid: 24e30cfc8eaa68a409d960499a0f0585, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180.00002
+      objectReference: {fileID: 0}
+    - target: {fileID: 114083553150446038, guid: 24e30cfc8eaa68a409d960499a0f0585,
+        type: 3}
+      propertyPath: hasKey
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24e30cfc8eaa68a409d960499a0f0585, type: 3}
@@ -11241,10 +11276,7 @@ PrefabInstance:
     - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: textInfo
-      value: 'Lots of trash here. Maybe i can use it...
-
-
-        [RIGHT CLICK TO THROW]
+      value: 'RIGHT CLICK TO THROW
 
 '
       objectReference: {fileID: 0}
@@ -15347,7 +15379,7 @@ PrefabInstance:
     - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: textInfo
-      value: '[HOLD LEFT MOUSE BUTTON TO MOVE]'
+      value: HOLD LEFT MOUSE BUTTON TO MOVE
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb6416b8ea353b4ba915e0763c528eb, type: 3}
@@ -15704,35 +15736,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2005633240717465324, guid: e407c9de0c821814795c37e9c2f37a5c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1283542905911059318, guid: e407c9de0c821814795c37e9c2f37a5c,
-        type: 3}
-      propertyPath: m_Text
-      value: "CHAPTER ONE\n\nI have been sent to investigate a distress call in a
-        place called Easthaven. A single message has been recieved, before the town
-        went dark. \n\n\"SEND HELP... WE HAVE SEEN THE VOID AND ARE UNWILLING TO VISIT
-        THE TIMES OF OUR OWN ESSENCE\"\n\nI was the first one to respond.\n\n\n[PRESS
-        SPACE TO BEGIN]"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5221171230164451496, guid: e407c9de0c821814795c37e9c2f37a5c,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 812412539412229268, guid: e407c9de0c821814795c37e9c2f37a5c,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5221171230281293492, guid: e407c9de0c821814795c37e9c2f37a5c,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 2357
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e407c9de0c821814795c37e9c2f37a5c, type: 3}

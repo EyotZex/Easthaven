@@ -25,6 +25,10 @@ public class Admin : MonoBehaviour
 
     void Update()
     {
+        if(playerScript == null) {
+            playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<AlternativePlayerControls>();
+        }
+
         if (startTimer)
         {
             Timer -= Time.deltaTime;

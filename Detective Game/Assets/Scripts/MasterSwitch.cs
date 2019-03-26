@@ -9,33 +9,51 @@ public class MasterSwitch : MonoBehaviour
     public LayerMask playerLayer;
     public float maskSize;
 
+    public TextManager _textManager;
+    public string textToInteract = "Press E to interact";
+    private bool CanBeInteracted;
     public AutomaticDoor automaticDoorScript;
 
     void Start()
     {
-
+        _textManager = GameObject.FindGameObjectWithTag("Admin").GetComponentInChildren<TextManager>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        interactRange = Physics2D.OverlapCircle(circleOrigin.position, maskSize, playerLayer);
 
-        if (interactRange)
+        if (CanBeInteracted)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
                 if (automaticDoorScript.isOpen == false)
                 {
                     automaticDoorScript.instructionRecieved = false;
- //                   automaticDoorScript.isOpen = true;
                 }
                 else
                 {
                     automaticDoorScript.instructionRecieved = false;
- //                   automaticDoorScript.isOpen = false;
                 }
             }
+        }
+    }
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            CanBeInteracted = true;
+            _textManager.Canvas.SetActive(true);
+            _textManager.canvasText.text = textToInteract;
+        }
+    }
+
+
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            CanBeInteracted = false;
+            _textManager.Canvas.SetActive(false);
         }
     }
 }

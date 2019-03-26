@@ -10,16 +10,33 @@ public class TextManager : MonoBehaviour
     public GameObject Canvas2;
     public Text canvasText;
     public Text canvasText2;
-    // Start is called before the first frame update
+    [TextArea]
+    public string textInfo;
+
+    public bool levelStarted = false;
+
+
     void Start()
     {
-        
+
+        Time.timeScale = 0f;
+        Canvas2.SetActive(true);
+        canvasText2.text = textInfo;
+        Canvas.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (!levelStarted)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                Time.timeScale = 1f;
+                Canvas2.SetActive(false);
+                Canvas.SetActive(false);
+                levelStarted = true;
+            }
+        }
     }
 }
 

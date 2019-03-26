@@ -163,6 +163,14 @@ public class DoorControl : MonoBehaviour {
                 }
             }
         }
+        if (CanBeInteracted)
+        {
+            if (interactRangeLeft || interactRangeRight)
+            {
+
+            }
+        }
+
     }
 
 	public void OnTriggerEnter2D (Collider2D other){

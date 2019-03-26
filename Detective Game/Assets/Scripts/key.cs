@@ -6,12 +6,13 @@ public class key : MonoBehaviour {
 
 	public DoorControl doorScript;
     private bool CanBeInteracted;
+    public TextManager _textManager;
+    public string textToInteract = "Press E to interact";
 
-    void Start () {
-		
-	}
-
-    // Update is called once per frame
+    void Start()
+    {
+        _textManager = GameObject.FindGameObjectWithTag("Admin").GetComponentInChildren<TextManager>();
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && CanBeInteracted)
@@ -26,6 +27,8 @@ public class key : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             CanBeInteracted = true;
+            _textManager.Canvas.SetActive(true);
+            _textManager.canvasText.text = textToInteract;
         }
     }
     
@@ -35,6 +38,7 @@ public class key : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             CanBeInteracted = false;
+            _textManager.Canvas.SetActive(false);
         }
     }
 }
