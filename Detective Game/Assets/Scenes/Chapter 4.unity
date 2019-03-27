@@ -1371,6 +1371,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TextArea (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 48811764062307350, guid: bbb6416b8ea353b4ba915e0763c528eb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1440,6 +1445,11 @@ PrefabInstance:
         type: 3}
       propertyPath: textInfo
       value: Looks like the switch for the alarm. Maybe i can use this.
+      objectReference: {fileID: 0}
+    - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb6416b8ea353b4ba915e0763c528eb, type: 3}
@@ -3216,6 +3226,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1884355660}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &111504332
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4840036223684146622, guid: b47f0d0de0b04f04fa85480b6ff07606,
+        type: 3}
+      propertyPath: m_Name
+      value: Wall 5x1 (230)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842500743441203375, guid: b47f0d0de0b04f04fa85480b6ff07606,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842500743441203375, guid: b47f0d0de0b04f04fa85480b6ff07606,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842500743441203375, guid: b47f0d0de0b04f04fa85480b6ff07606,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842500743441203375, guid: b47f0d0de0b04f04fa85480b6ff07606,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842500743441203375, guid: b47f0d0de0b04f04fa85480b6ff07606,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842500743441203375, guid: b47f0d0de0b04f04fa85480b6ff07606,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.14094508
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842500743441203375, guid: b47f0d0de0b04f04fa85480b6ff07606,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9900175
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842500743441203375, guid: b47f0d0de0b04f04fa85480b6ff07606,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842500743441203375, guid: b47f0d0de0b04f04fa85480b6ff07606,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842500743441203375, guid: b47f0d0de0b04f04fa85480b6ff07606,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842500743441203375, guid: b47f0d0de0b04f04fa85480b6ff07606,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 16.205
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b47f0d0de0b04f04fa85480b6ff07606, type: 3}
 --- !u!1 &111689079
 GameObject:
   m_ObjectHideFlags: 0
@@ -4083,7 +4162,7 @@ PrefabInstance:
     - target: {fileID: 114083553150446038, guid: 24e30cfc8eaa68a409d960499a0f0585,
         type: 3}
       propertyPath: textInfo
-      value: Locked...
+      value: Boarded up from inside. Im not getting in there
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24e30cfc8eaa68a409d960499a0f0585, type: 3}
@@ -5768,6 +5847,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -5.98
       objectReference: {fileID: 0}
+    - target: {fileID: 1714943373, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714943373, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.67
+      objectReference: {fileID: 0}
     - target: {fileID: 2105520435, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.08
@@ -5785,14 +5872,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 2.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 1714943373, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 1714943373, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.67
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
@@ -12463,6 +12542,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -5.98
       objectReference: {fileID: 0}
+    - target: {fileID: 1714943373, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714943373, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.67
+      objectReference: {fileID: 0}
     - target: {fileID: 2105520435, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.08
@@ -12480,14 +12567,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.93
-      objectReference: {fileID: 0}
-    - target: {fileID: 1714943373, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 1714943373, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.67
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
@@ -15162,14 +15241,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.52
       objectReference: {fileID: 0}
-    - target: {fileID: 2105520435, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 2105520435, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 7.25
-      objectReference: {fileID: 0}
     - target: {fileID: 1714943373, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3
@@ -15177,6 +15248,14 @@ PrefabInstance:
     - target: {fileID: 1714943373, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
       propertyPath: m_LocalPosition.y
       value: 4.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 2105520435, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 2105520435, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
@@ -22223,7 +22302,25 @@ PrefabInstance:
 
 
 
-        [PRESS SPACE TO CONTINUE]'
+        [PRESS E TO CONTINUE]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5221171231136845732, guid: e407c9de0c821814795c37e9c2f37a5c,
+        type: 3}
+      propertyPath: textInfo
+      value: 'CHAPTER five
+
+
+
+        I have to get across town to the container yard.
+
+
+        whatever is happening here, maybe i can stop it before before my backup gets
+        ripped apart by these things. i tried to warn them but all communication is
+        down...
+
+
+
+        [PRESS E TO CONTINUE]'
       objectReference: {fileID: 0}
     - target: {fileID: 1130766261, guid: e407c9de0c821814795c37e9c2f37a5c, type: 3}
       propertyPath: fadeScript
@@ -23910,12 +24007,12 @@ PrefabInstance:
     - target: {fileID: 5794523068653587542, guid: e54b149e167d732459f4eb7111254e96,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.5
+      value: 15.22
       objectReference: {fileID: 0}
     - target: {fileID: 5794523068653587542, guid: e54b149e167d732459f4eb7111254e96,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.540432
+      value: -0.21
       objectReference: {fileID: 0}
     - target: {fileID: 5794523068653587542, guid: e54b149e167d732459f4eb7111254e96,
         type: 3}
@@ -27097,7 +27194,7 @@ PrefabInstance:
     - target: {fileID: 114083553150446038, guid: 24e30cfc8eaa68a409d960499a0f0585,
         type: 3}
       propertyPath: textInfo
-      value: 
+      value: Must be the shop. There should be a way to get inside
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24e30cfc8eaa68a409d960499a0f0585, type: 3}
@@ -28598,6 +28695,32 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1835047393}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1836836149 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 48811764062307350, guid: bbb6416b8ea353b4ba915e0763c528eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1988744884}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1836836150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1836836149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6835a3af3589ded40951c8bdd13c0f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  signActive: 0
+  CanBeInteracted: 0
+  textInfo: 'There is a note here... "I''m leaving you the key to my shop, in case
+    the damn alarm turns on again
+
+'
+  textToInteract: Press E to interact
+  _textManager: {fileID: 0}
 --- !u!1001 &1838719553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29340,6 +29463,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -5.98
       objectReference: {fileID: 0}
+    - target: {fileID: 1714943373, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 1714943373, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.67
+      objectReference: {fileID: 0}
     - target: {fileID: 2105520435, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.84
@@ -29357,14 +29488,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 1714943373, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 1714943373, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.67
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
@@ -30873,12 +30996,12 @@ PrefabInstance:
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.71
+      value: 12.81
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.94
+      value: 4.17
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
@@ -30928,12 +31051,17 @@ PrefabInstance:
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.8608375
+      value: 3.2524831
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.696875
+      value: 3.1143563
+      objectReference: {fileID: 0}
+    - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.84242946
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
@@ -30942,6 +31070,11 @@ PrefabInstance:
         the damn alarm turns on again
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb6416b8ea353b4ba915e0763c528eb, type: 3}
@@ -31753,14 +31886,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.08
       objectReference: {fileID: 0}
-    - target: {fileID: 2105520435, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 14.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 2105520435, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.91
-      objectReference: {fileID: 0}
     - target: {fileID: 1714943373, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.99
@@ -31768,6 +31893,14 @@ PrefabInstance:
     - target: {fileID: 1714943373, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
       propertyPath: m_LocalPosition.y
       value: 5.73
+      objectReference: {fileID: 0}
+    - target: {fileID: 2105520435, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 2105520435, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.91
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}

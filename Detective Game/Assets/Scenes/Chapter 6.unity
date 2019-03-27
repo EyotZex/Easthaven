@@ -2990,12 +2990,12 @@ PrefabInstance:
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.82
+      value: 14.51
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.64
+      value: -4.6
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
@@ -3045,17 +3045,17 @@ PrefabInstance:
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.2972794
+      value: 3.8291385
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.462633
+      value: 2.5029643
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.43451664
+      value: 0.31409037
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
@@ -4453,13 +4453,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: moveSpots.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3781683902137237627, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: moveSpots.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6957538212373177753, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
@@ -7229,6 +7229,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2043161943}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &439223272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 48811764062307350, guid: bbb6416b8ea353b4ba915e0763c528eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 966909345}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &439223277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 439223272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6835a3af3589ded40951c8bdd13c0f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  signActive: 0
+  CanBeInteracted: 0
+  textInfo: There is a note here.. "Im so sorry. i never intended for things to go
+    so wrong. These creatures. Oh god. Cant stop now. I can make it work. Im so close.
+    Ill make it all worth it..."
+  textToInteract: Press E to interact
+  _textManager: {fileID: 0}
 --- !u!1001 &441845002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10227,13 +10252,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: moveSpots.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3781683902137237627, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: moveSpots.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6957538212373177753, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
@@ -10982,13 +11007,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: moveSpots.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3781683902137237627, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: moveSpots.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6957538212373177753, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
@@ -12730,13 +12755,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: moveSpots.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3781683902137237627, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: moveSpots.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6957538212373177753, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
@@ -13078,13 +13103,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: moveSpots.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3781683902137237627, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: moveSpots.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6957538212373177753, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
@@ -13965,6 +13990,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TextArea
       objectReference: {fileID: 0}
+    - target: {fileID: 48811764062307350, guid: bbb6416b8ea353b4ba915e0763c528eb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14040,6 +14070,11 @@ PrefabInstance:
       propertyPath: textInfo
       value: What is this place... Looks like a secret workshop, or a laboratory.
         hidden beneath the container yard. But why?
+      objectReference: {fileID: 0}
+    - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb6416b8ea353b4ba915e0763c528eb, type: 3}
@@ -15050,6 +15085,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1337437659}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &948257886 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 48811764062307350, guid: bbb6416b8ea353b4ba915e0763c528eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1783008035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &948257891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948257886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6835a3af3589ded40951c8bdd13c0f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  signActive: 0
+  CanBeInteracted: 0
+  textInfo: There are plans here. For the Easthaven power plant... but he drew over
+    them. Added cables, and modyfing the grid. All leading to a large box he drew
+    at the center?
+  textToInteract: Press E to interact
+  _textManager: {fileID: 0}
 --- !u!4 &950919460 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8205985114371158981, guid: 3c1e072a6faa3d64cb1210bfc44c58af,
@@ -15443,17 +15503,17 @@ PrefabInstance:
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 6.498061
+      value: 4.410299
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 4.247539
+      value: 2.882847
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.53301245
+      value: 0.36176088
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
@@ -15461,6 +15521,11 @@ PrefabInstance:
       value: There is a note here.. "Im so sorry. i never intended for things to go
         so wrong. These creatures. Oh god. Cant stop now. I can make it work. Im so
         close. Ill make it all worth it..."
+      objectReference: {fileID: 0}
+    - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb6416b8ea353b4ba915e0763c528eb, type: 3}
@@ -15994,17 +16059,17 @@ PrefabInstance:
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.2972794
+      value: 4.1409893
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.462633
+      value: 2.7068093
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.43451664
+      value: 0.33967033
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
@@ -16012,6 +16077,11 @@ PrefabInstance:
       value: '"I think the locals are onto me. Must hurry. Luckily i lured the creatures
         into the container yard. They wont reach me in time. The Gateway will open
         fully tonight!"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb6416b8ea353b4ba915e0763c528eb, type: 3}
@@ -16870,13 +16940,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: moveSpots.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3781683902137237627, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: moveSpots.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6957538212373177753, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
@@ -20773,10 +20843,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1130766261, guid: e407c9de0c821814795c37e9c2f37a5c, type: 3}
-      propertyPath: fadeScript
-      value: 
-      objectReference: {fileID: 340358815}
     - target: {fileID: 2005633240717465324, guid: e407c9de0c821814795c37e9c2f37a5c,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -20787,8 +20853,19 @@ PrefabInstance:
       propertyPath: m_Text
       value: "CHAPTER seven\n\n\nthis place... he set up a laboratory in abandoned
         manitanance tunnels. the container yard was directly above it. \nwhat the
-        hell is he after?!\n\n\n\n[PRESS SPACE TO CONTINUE]"
+        hell is he after?!\n\n\n\n[PRESS E TO CONTINUE]"
       objectReference: {fileID: 0}
+    - target: {fileID: 5221171231136845732, guid: e407c9de0c821814795c37e9c2f37a5c,
+        type: 3}
+      propertyPath: textInfo
+      value: "CHAPTER seven\n\n\nthis place... he set up a laboratory in abandoned
+        manitanance tunnels. the container yard was directly above it. \nwhat the
+        hell is he after?!\n\n\n\n[PRESS E TO CONTINUE]"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130766261, guid: e407c9de0c821814795c37e9c2f37a5c, type: 3}
+      propertyPath: fadeScript
+      value: 
+      objectReference: {fileID: 340358815}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e407c9de0c821814795c37e9c2f37a5c, type: 3}
 --- !u!1001 &1245716389
@@ -21479,13 +21556,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: moveSpots.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3781683902137237627, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: moveSpots.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6957538212373177753, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
@@ -21647,13 +21724,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: moveSpots.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3781683902137237627, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: moveSpots.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6957538212373177753, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
@@ -22284,13 +22361,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: moveSpots.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3781683902137237627, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: moveSpots.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6957538212373177753, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
@@ -22629,13 +22706,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: moveSpots.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3781683902137237627, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: moveSpots.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6957538212373177753, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
@@ -23852,13 +23929,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: moveSpots.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3781683902137237627, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: moveSpots.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6957538212373177753, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
@@ -26957,13 +27034,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: moveSpots.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3781683902137237627, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: moveSpots.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6957538212373177753, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
@@ -26993,12 +27070,12 @@ PrefabInstance:
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.44
+      value: 3.84
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -10.49
+      value: -11.14
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
@@ -27048,23 +27125,29 @@ PrefabInstance:
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 5.2972794
+      value: 4.246935
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 3.462633
+      value: 2.776062
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.43451664
+      value: 0.3483607
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: textInfo
       value: Hand drawn blueprints for some kind of machine. he called it the... "Reality
-        Gateway"... what the hell is this thing??
+        Gateway"... what the hell is this thing?? drawn blueprints for some kind of
+        machine. he called it the... "Reality Gateway"... what the hell is this thing??
+      objectReference: {fileID: 0}
+    - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb6416b8ea353b4ba915e0763c528eb, type: 3}
@@ -27294,13 +27377,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: moveSpots.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3781683902137237627, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: moveSpots.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6957538212373177753, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
@@ -28655,13 +28738,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: moveSpots.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3781683902137237627, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: moveSpots.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6957538212373177753, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
@@ -28676,6 +28759,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+--- !u!1 &1674862371 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 48811764062307350, guid: bbb6416b8ea353b4ba915e0763c528eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1559441553}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1674862376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674862371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6835a3af3589ded40951c8bdd13c0f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  signActive: 0
+  CanBeInteracted: 0
+  textInfo: Hand drawn blueprints for some kind of machine. he called it the... "Reality
+    Gateway"... what the hell is this thing??
+  textToInteract: Press E to interact
+  _textManager: {fileID: 0}
 --- !u!4 &1677234181 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5527943843900996066, guid: 8262b2f502bf43c49ade838d72dcbba9,
@@ -30348,17 +30455,17 @@ PrefabInstance:
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 7.6556664
+      value: 6.1663327
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 5.0042224
+      value: 4.0307007
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307354, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.62796664
+      value: 0.505802
       objectReference: {fileID: 0}
     - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
         type: 3}
@@ -30366,6 +30473,11 @@ PrefabInstance:
       value: There are plans here. For the Easthaven power plant... but he drew over
         them. Added cables, and modyfing the grid. All leading to a large box he drew
         at the center?
+      objectReference: {fileID: 0}
+    - target: {fileID: 48811764062307351, guid: bbb6416b8ea353b4ba915e0763c528eb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbb6416b8ea353b4ba915e0763c528eb, type: 3}
@@ -34201,6 +34313,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c1e072a6faa3d64cb1210bfc44c58af, type: 3}
+--- !u!1 &1991338265 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 48811764062307350, guid: bbb6416b8ea353b4ba915e0763c528eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 209616967}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1991338270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991338265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6835a3af3589ded40951c8bdd13c0f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  signActive: 0
+  CanBeInteracted: 0
+  textInfo: Another entry "They came from the other side. From beyond. That means
+    my machine works! If they can come through, so can we!"
+  textToInteract: Press E to interact
+  _textManager: {fileID: 0}
 --- !u!1001 &1992429763
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34604,6 +34740,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 989058225}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2012766307 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 48811764062307350, guid: bbb6416b8ea353b4ba915e0763c528eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 987695581}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2012766312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012766307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6835a3af3589ded40951c8bdd13c0f88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  signActive: 0
+  CanBeInteracted: 0
+  textInfo: '"I think the locals are onto me. Must hurry. Luckily i lured the creatures
+    into the container yard. They wont reach me in time. The Gateway will open fully
+    tonight!"'
+  textToInteract: Press E to interact
+  _textManager: {fileID: 0}
 --- !u!1001 &2019870020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35800,13 +35961,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
+      propertyPath: moveSpots.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3781683902137237627, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 606388931, guid: c3c7d2dc25583f24c908f8dc4ae1554d, type: 3}
-      propertyPath: moveSpots.Array.size
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6957538212373177753, guid: c3c7d2dc25583f24c908f8dc4ae1554d,
