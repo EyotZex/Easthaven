@@ -194,11 +194,10 @@ MonoBehaviour:
   Canvas2: {fileID: 6484564675390719945}
   canvasText: {fileID: 5221171229910051908}
   canvasText2: {fileID: 6484564675068685090}
-  textInfo: "CHAPTER ONE \n\n I have been sent to investigate a distress call in a
-    place called Easthaven. A single message has been recieved, before the town went
-    dark.  \n\n \"SEND HELP... WE HAVE SEEN THE VOID AND ARE UNWILLING TO VISIT THE
-    TIMES OF OUR OWN ESSENCE\" \n\n I was the first one to respond.   \n\n\n[PRESS
-    E TO BEGIN]"
+  textInfo: "CHAPTER ONE\n\nI have been sent to investigate a distress call in a place
+    called Easthaven. A single message has been recieved, before the town went dark.
+    \n\n\"SEND HELP... WE HAVE SEEN THE VOID AND ARE UNWILLING TO VISIT THE TIMES
+    OF OUR OWN ESSENCE\"\n\nI was the first one to respond.\n\n\n[PRESS E TO BEGIN]"
   levelStarted: 0
 --- !u!114 &1130766261
 MonoBehaviour:
@@ -217,8 +216,8 @@ MonoBehaviour:
   fadeScript: {fileID: 0}
   Timer: 2
   startTimer: 0
-  sceneToLoad: Chapter 0
-  deathScenario: 0
+  sceneToLoad: MainMenu
+  deathScenario: 1
   activated: 0
   deathSound: {fileID: 8300000, guid: e1d2736038967a54f8000a0d573fb860, type: 3}
   deathSource: {fileID: 1055092317710869006}
@@ -553,6 +552,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3676777577949012351, guid: 59063eb96727918429ff1d06adaac873,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3676777578706996628, guid: 59063eb96727918429ff1d06adaac873,
         type: 3}
       propertyPath: m_FontData.m_Font
@@ -681,33 +685,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3676777577798926180, guid: 59063eb96727918429ff1d06adaac873,
         type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3676777577798926180, guid: 59063eb96727918429ff1d06adaac873,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3676777577798926180, guid: 59063eb96727918429ff1d06adaac873,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3676777577798926180, guid: 59063eb96727918429ff1d06adaac873,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 3.6743586e-10
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3676777577798926180, guid: 59063eb96727918429ff1d06adaac873,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 4.2200554e-10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3676777577798926180, guid: 59063eb96727918429ff1d06adaac873,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1024
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3676777577798926180, guid: 59063eb96727918429ff1d06adaac873,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 768
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3676777577798926180, guid: 59063eb96727918429ff1d06adaac873,
         type: 3}

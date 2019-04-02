@@ -20663,7 +20663,7 @@ PrefabInstance:
     - target: {fileID: 3154613608217384636, guid: e32920fd33b67eb4e9ee4850f2ca153c,
         type: 3}
       propertyPath: chapterName
-      value: MainMenu
+      value: Chapter 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e32920fd33b67eb4e9ee4850f2ca153c, type: 3}
@@ -20866,6 +20866,11 @@ PrefabInstance:
       propertyPath: fadeScript
       value: 
       objectReference: {fileID: 340358815}
+    - target: {fileID: 6484564675390719950, guid: e407c9de0c821814795c37e9c2f37a5c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e407c9de0c821814795c37e9c2f37a5c, type: 3}
 --- !u!1001 &1245716389

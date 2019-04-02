@@ -2,23 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AlarmControl : MonoBehaviour
+public class SlidingDoorControl : MonoBehaviour
 {
-
-    public Alarm alarmScript;
+    public SlidingDoor slidingDoorScript;
     public bool CanBeInteracted;
+    public string textToInteract = "Press E to interact";
+    public TextManager _textManager;
 
+    void Start()
+    {
+        _textManager = GameObject.FindGameObjectWithTag("Admin").GetComponentInChildren<TextManager>();
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && CanBeInteracted)
         {
-            if (alarmScript.alarmOn)
+            if (slidingDoorScript.open)
             {
-                alarmScript.alarmOn = false;
+                slidingDoorScript.open = false;
             }
             else
             {
-                alarmScript.alarmOn = true;
+                slidingDoorScript.open = true;
             }
         }
     }
@@ -27,19 +32,22 @@ public class AlarmControl : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             CanBeInteracted = true;
+            _textManager.Canvas.SetActive(true);
+            _textManager.canvasText.text = textToInteract;
         }
         if (other.gameObject.tag == "Projectile")
         {
-            alarmScript.alarmOn = true;
+            print("yay");
+            slidingDoorScript.open = true;
         }
     }
     public void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {
+            _textManager.Canvas.SetActive(false);
             CanBeInteracted = false;
         }
     }
 }
 
-   
