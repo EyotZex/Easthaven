@@ -12,18 +12,22 @@ public class SlidingDoorControl : MonoBehaviour
     void Start()
     {
         _textManager = GameObject.FindGameObjectWithTag("Admin").GetComponentInChildren<TextManager>();
+        slidingDoorScript._Animator.Play("SlidingDoorClosing");
+        slidingDoorScript.open = false;
     }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && CanBeInteracted)
         {
-            if (slidingDoorScript.open)
+            if (!slidingDoorScript.open)
             {
-                slidingDoorScript.open = false;
+                slidingDoorScript._Animator.Play("SlidingDoorOpening");
+                slidingDoorScript.open = true;
             }
             else
             {
-                slidingDoorScript.open = true;
+                slidingDoorScript._Animator.Play("SlidingDoorClosing");
+                slidingDoorScript.open = false;
             }
         }
     }
@@ -37,8 +41,16 @@ public class SlidingDoorControl : MonoBehaviour
         }
         if (other.gameObject.tag == "Projectile")
         {
-            print("yay");
-            slidingDoorScript.open = true;
+            if (!slidingDoorScript.open)
+            {
+                slidingDoorScript._Animator.Play("SlidingDoorOpening");
+                slidingDoorScript.open = true;
+            }
+            else
+            {
+                slidingDoorScript._Animator.Play("SlidingDoorClosing");
+                slidingDoorScript.open = false;
+            }
         }
     }
     public void OnTriggerExit2D(Collider2D other)

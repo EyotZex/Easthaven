@@ -73,6 +73,9 @@ public class BeamControl : MonoBehaviour
                 else
                 {
                     Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);
+                    ButtonLight.SetActive(false);
+                    lightOn = false;
+                    LightTimer = 5f;
                 }
             }
             if (light3.activeSelf == false)

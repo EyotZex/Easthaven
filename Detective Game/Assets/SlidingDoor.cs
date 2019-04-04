@@ -7,22 +7,10 @@ public class SlidingDoor : MonoBehaviour
 
     public bool open = false;
     public GameObject door;
+    public Animator _Animator;
 
     void Start()
     {
-        
-    }
-
-
-    void Update()
-    {
-        if (open)
-        {
-            door.SetActive(false);
-        }
-        else
-        {
-            door.SetActive(true);
-        }
+        _Animator = GetComponent<Animator>();
     }
 }
