@@ -22,6 +22,8 @@ public class BeamControl : MonoBehaviour
     public AudioSource _AudioSource;
     public AudioClip correct;
     public AudioClip wrong;
+    public AudioSource _audioSource;
+    public AudioClip failSound;
 
     void Start()
     {
@@ -73,6 +75,7 @@ public class BeamControl : MonoBehaviour
                 else
                 {
                     Instantiate(SoundObject, soundOrigin.transform.position, Quaternion.identity);
+                    _audioSource.PlayOneShot(failSound);
                     ButtonLight.SetActive(false);
                     lightOn = false;
                     LightTimer = 5f;
