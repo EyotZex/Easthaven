@@ -16,6 +16,10 @@ public class RestartScene : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D player)
     {
+        if(admin == null)
+        {
+            admin = GameObject.FindGameObjectWithTag("Admin").GetComponent<Admin>();
+        }
         if (player.gameObject.tag == "Player")
         {
                 admin.PlayerDead = true;

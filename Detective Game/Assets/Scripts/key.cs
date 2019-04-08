@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class key : MonoBehaviour {
 
-	public DoorControl doorScript;
+	public DoorControl2 doorScript;
     private bool CanBeInteracted;
     public TextManager _textManager;
     public string textToInteract = "Press E to interact";
@@ -18,7 +18,7 @@ public class key : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.E) && CanBeInteracted)
         {
             print("key");
-            doorScript.hasKey = true;
+            doorScript.keyRequired = false;
             Destroy(gameObject);
         }
     }

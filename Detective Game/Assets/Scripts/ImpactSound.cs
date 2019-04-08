@@ -29,8 +29,11 @@ public class ImpactSound : MonoBehaviour
     {
         if (other.gameObject.tag == "Player" && soundMade && playerProjectileLauncher.hasThrowable == false)
         {
-            playerProjectileLauncher.hasThrowable = true;
-            Destroy(gameObject);
+            if (soundMade)
+            {
+                playerProjectileLauncher.hasThrowable = true;
+                Destroy(gameObject);
+            }
         }
         if (other.gameObject.tag == "Wall" || other.gameObject.tag == "Monster")
         {

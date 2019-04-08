@@ -36,11 +36,11 @@ public class Admin : MonoBehaviour
 
         if (Timer < 0)
         {
-            if (deathScenario == 0)
+            if (deathScenario == 1)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
-            if (deathScenario == 1)
+            if (deathScenario == 0)
             {
                 SceneManager.LoadScene(sceneToLoad);
             }

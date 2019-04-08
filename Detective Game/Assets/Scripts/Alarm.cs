@@ -31,5 +31,10 @@ public class Alarm : MonoBehaviour
                 timer = timerStart;
             }
         }
+        else
+        {
+            alarmAudioSource.Stop();
+            timer = 0;
+        }
     }
 }

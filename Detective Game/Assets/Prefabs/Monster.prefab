@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 4025463790712908832}
   - component: {fileID: 9126230811600623667}
   - component: {fileID: 1288616504291682413}
+  - component: {fileID: 1870678130}
   m_Layer: 9
   m_Name: Monster
   m_TagString: Monster
@@ -293,3 +294,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &1870678130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6301951798325612321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8cb209f485cc149909c759f285137c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  admin: {fileID: 0}
+  monsterSpeed: 0.5
+  monsterChaseSpeed: 3
+  target: {fileID: 0}
