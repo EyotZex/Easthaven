@@ -99,6 +99,7 @@ public class DoorControl2 : MonoBehaviour
                 doorIsOpen = true;
                 doorOpenRight = true;
                 DisableCollider();
+                CreateNoise();
             }
         }
 

@@ -393,7 +393,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 315}
+  m_AnchoredPosition: {x: 13.100006, y: 304}
   m_SizeDelta: {x: 400, y: 86.54001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1034859002
@@ -429,7 +429,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CONTROLS
+  m_Text: CREDITS
 --- !u!222 &1034859003
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -542,10 +542,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 43166ab9bd1f9d442ad3e82e9888a72f, type: 3}
-    m_FontSize: 30
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 0
     m_MaxSize: 113
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -553,24 +553,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'HOLD Left Mouse - Walking
-
-
-    SPACE - Sprinting
-
-
-    PRESS Right Mouse - Fire Projectile
-
-
-    E - Interact with enviroment
-
-
-    ESC - Return to Menu
-
-
-
-
-    [Press ESC to return to main menu]'
+  m_Text: "created by\nAndrzej kowalski  &  michael adeluwoye\n\nart / game design
+    / programming\nAndrzej kowalski  &  michael adeluwoye\n\nAudio assistance\nomar
+    daniel quirino\n\nstory assistance \noliver james hughes\n\n\n\n[Press ESC to
+    return to main menu]"
 --- !u!222 &1744644772
 CanvasRenderer:
   m_ObjectHideFlags: 0

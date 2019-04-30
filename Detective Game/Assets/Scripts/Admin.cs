@@ -60,6 +60,10 @@ public class Admin : MonoBehaviour
     {
         SceneManager.LoadScene("Controls");
     }
+    public void Credits()
+    {
+        SceneManager.LoadScene("Credits");
+    }
     public void Exit()
     {
         Time.timeScale = 1f;

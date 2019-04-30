@@ -4499,6 +4499,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8986467696496244956, guid: cc7ab98f6e295ea4b944e19a63ec585b,
+        type: 3}
+      propertyPath: Reverse
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc7ab98f6e295ea4b944e19a63ec585b, type: 3}
 --- !u!1001 &982656424
@@ -6293,6 +6298,11 @@ PrefabInstance:
 
 '
       objectReference: {fileID: 0}
+    - target: {fileID: 5221171231136845732, guid: e407c9de0c821814795c37e9c2f37a5c,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1130766261, guid: e407c9de0c821814795c37e9c2f37a5c, type: 3}
       propertyPath: playerScript
       value: 
@@ -6311,7 +6321,7 @@ PrefabInstance:
       objectReference: {fileID: 8300000, guid: e1d2736038967a54f8000a0d573fb860, type: 3}
     - target: {fileID: 1130766261, guid: e407c9de0c821814795c37e9c2f37a5c, type: 3}
       propertyPath: sceneToLoad
-      value: MainMenu
+      value: Credits
       objectReference: {fileID: 0}
     - target: {fileID: 6484564675390719945, guid: e407c9de0c821814795c37e9c2f37a5c,
         type: 3}
